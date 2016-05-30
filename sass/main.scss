@@ -1,15 +1,19 @@
 /* ===================================
    Improts
    =================================== */
-//@import "sprites/_sprite_bundle";
+@import "sprites/_sprite_bundle";
 @import "assets/_normalize";
 @import "assets/base";
 @import "assets/vars";
 
 /* ===================================
-   Animations for the Loader
+   Navigation rules
    =================================== */
- 
+
+#navigation {
+  background-color: $header-bg;
+}
+
 /* ===================================
    End of file
    =================================== */

@@ -1,15 +1,60 @@
 /* ===================================
     Fonts
    =================================== */
-
+@font-face {
+    font-family: 'sofia_probold';
+    src: url('mostardesign_-_sofia_pro_bold-webfont.otf') format('otf');
+    src: url('mostardesign_-_sofia_pro_bold-webfont.woff2') format('woff2'),
+         url('mostardesign_-_sofia_pro_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia_prolight';
+    src: url('mostardesign_-_sofia_pro_light-webfont.otf') format('otf');
+    src: url('mostardesign_-_sofia_pro_light-webfont.woff2') format('woff2'),
+         url('mostardesign_-_sofia_pro_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia_promedium';
+    src: url('mostardesign_-_sofia_pro_medium-webfont.otf') format('otf');
+    src: url('mostardesign_-_sofia_pro_medium-webfont.woff2') format('woff2'),
+         url('mostardesign_-_sofia_pro_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia_proregular';
+    src: url('mostardesign_-_sofia_pro_regular-webfont.otf') format('otf');
+    src: url('mostardesign_-_sofia_pro_regular-webfont.woff2') format('woff2'),
+         url('mostardesign_-_sofia_pro_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* ===================================
     Colors
    =================================== */
 
+$header-bg: #fcfbf9;
+
 /* ===================================
    Misc
    =================================== */
-  
+
+$sofia-l: 'sofia_prolight';
+$sofia-b: 'sofia_probold';
+$sofia-m: 'sofia_promedium';
+$sofia-r: 'sofia_proregular';
+
 /* ===================================
    Classes
    =================================== */
+  
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
