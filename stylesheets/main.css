@@ -1,35 +1,55 @@
 /* ===================================
    Improts
    =================================== */
-/* line 80, small_icons/*.png */
-.small_icons-sprite, .small_icons-cart, .small_icons-home, .small_icons-home2, .small_icons-search, .small_icons-wish {
-  background-image: url('/images/small_icons-s8f72f84772.png');
+/* line 112, small_icons/*.png */
+.small_icons-sprite, .small_icons-bread, .small_icons-cart, #navigation .cart, .small_icons-cartActive, #navigation .cart:hover, .small_icons-home, #navigation .nav-menu .home, .small_icons-nl_flag, #navigation .lang a, .small_icons-search, #navigation .search, .small_icons-searchActive, #navigation .search:hover, .small_icons-wish, #navigation .wishlist, .small_icons-wishActive, #navigation .wishlist:hover {
+  background-image: url('/images/small_icons-s63b0fa4146.png');
   background-repeat: no-repeat;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-cart {
+.small_icons-bread {
   background-position: 0 0;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-home {
-  background-position: 0 -36px;
+.small_icons-cart, #navigation .cart {
+  background-position: 0 -31px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-home2 {
+.small_icons-cartActive, #navigation .cart:hover {
   background-position: 0 -67px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-search {
-  background-position: 0 -104px;
+.small_icons-home, #navigation .nav-menu .home {
+  background-position: 0 -103px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-wish {
-  background-position: 0 -141px;
+.small_icons-nl_flag, #navigation .lang a {
+  background-position: 0 -140px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-search, #navigation .search {
+  background-position: 0 -171px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-searchActive, #navigation .search:hover {
+  background-position: 0 -208px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-wish, #navigation .wishlist {
+  background-position: 0 -245px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-wishActive, #navigation .wishlist:hover {
+  background-position: 0 -280px;
 }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -321,32 +341,63 @@ th {
 }
 
 /* line 23, ../sass/assets/_base.scss */
+html {
+  line-height: 1;
+}
+
+/* line 26, ../sass/assets/_base.scss */
+.hide {
+  display: none;
+}
+
+/* line 29, ../sass/assets/_base.scss */
+.show {
+  display: block;
+}
+
+/* line 32, ../sass/assets/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 35, ../sass/assets/_base.scss */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 40, ../sass/assets/_base.scss */
+.img-resize {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 1px;
+  display: block;
+}
+
+/* ===================================
+   12 Column grid system
+   =================================== */
+/* line 4, ../sass/assets/_grid.scss */
 .container-fluid {
-  padding-right: 2px;
-  padding-left: 2px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 29, ../sass/assets/_base.scss */
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-/* line 33, ../sass/assets/_base.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
-.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2,
-.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3,
-.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4,
-.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5,
-.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6,
-.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
-.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8,
-.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9,
-.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10,
-.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11,
-.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+/* line 8, ../sass/assets/_grid.scss */
+.col-xs-1, .col-sm-1, .col-md-1,
+.col-xs-2, .col-sm-2, .col-md-2,
+.col-xs-3, .col-sm-3, .col-md-3,
+.col-xs-4, .col-sm-4, .col-md-4,
+.col-xs-5, .col-sm-5, .col-md-5,
+.col-xs-6, .col-sm-6, .col-md-6,
+.col-xs-7, .col-sm-7, .col-md-7,
+.col-xs-8, .col-sm-8, .col-md-8,
+.col-xs-9, .col-sm-9, .col-md-9,
+.col-xs-10, .col-sm-10, .col-md-10,
+.col-xs-11, .col-sm-11, .col-md-11,
+.col-xs-12, .col-sm-12, .col-md-12 {
   min-height: 1px;
   padding-right: 10px;
   padding-left: 10px;
@@ -354,209 +405,209 @@ th {
   visibility: visible;
 }
 
-/* line 51, ../sass/assets/_base.scss */
+/* line 26, ../sass/assets/_grid.scss */
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
 
-/* line 54, ../sass/assets/_base.scss */
+/* line 29, ../sass/assets/_grid.scss */
 .col-xs-12 {
   width: 100%;
 }
 
-/* line 57, ../sass/assets/_base.scss */
+/* line 32, ../sass/assets/_grid.scss */
 .col-xs-11 {
   width: 91.66666667%;
 }
 
-/* line 60, ../sass/assets/_base.scss */
+/* line 35, ../sass/assets/_grid.scss */
 .col-xs-10 {
   width: 83.33333333%;
 }
 
-/* line 63, ../sass/assets/_base.scss */
+/* line 38, ../sass/assets/_grid.scss */
 .col-xs-9 {
   width: 75%;
 }
 
-/* line 66, ../sass/assets/_base.scss */
+/* line 41, ../sass/assets/_grid.scss */
 .col-xs-8 {
   width: 66.66666667%;
 }
 
-/* line 69, ../sass/assets/_base.scss */
+/* line 44, ../sass/assets/_grid.scss */
 .col-xs-7 {
   width: 58.33333333%;
 }
 
-/* line 72, ../sass/assets/_base.scss */
+/* line 47, ../sass/assets/_grid.scss */
 .col-xs-6 {
   width: 50%;
 }
 
-/* line 75, ../sass/assets/_base.scss */
+/* line 50, ../sass/assets/_grid.scss */
 .col-xs-5 {
   width: 41.66666667%;
 }
 
-/* line 78, ../sass/assets/_base.scss */
+/* line 53, ../sass/assets/_grid.scss */
 .col-xs-4 {
   width: 33.33333333%;
 }
 
-/* line 81, ../sass/assets/_base.scss */
+/* line 56, ../sass/assets/_grid.scss */
 .col-xs-3 {
   width: 25%;
 }
 
-/* line 84, ../sass/assets/_base.scss */
+/* line 59, ../sass/assets/_grid.scss */
 .col-xs-2 {
   width: 16.66666667%;
 }
 
-/* line 87, ../sass/assets/_base.scss */
+/* line 62, ../sass/assets/_grid.scss */
 .col-xs-1 {
   width: 8.33333333%;
 }
 
 @media (min-width: 768px) {
-  /* line 91, ../sass/assets/_base.scss */
+  /* line 66, ../sass/assets/_grid.scss */
   .container-fluid {
     width: 750px;
   }
 
-  /* line 94, ../sass/assets/_base.scss */
+  /* line 69, ../sass/assets/_grid.scss */
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
-  /* line 97, ../sass/assets/_base.scss */
+  /* line 72, ../sass/assets/_grid.scss */
   .col-sm-12 {
     width: 100%;
   }
 
-  /* line 100, ../sass/assets/_base.scss */
+  /* line 75, ../sass/assets/_grid.scss */
   .col-sm-11 {
     width: 91.66666667%;
   }
 
-  /* line 103, ../sass/assets/_base.scss */
+  /* line 78, ../sass/assets/_grid.scss */
   .col-sm-10 {
     width: 83.33333333%;
   }
 
-  /* line 106, ../sass/assets/_base.scss */
+  /* line 81, ../sass/assets/_grid.scss */
   .col-sm-9 {
     width: 75%;
   }
 
-  /* line 109, ../sass/assets/_base.scss */
+  /* line 84, ../sass/assets/_grid.scss */
   .col-sm-8 {
     width: 66.66666667%;
   }
 
-  /* line 112, ../sass/assets/_base.scss */
+  /* line 87, ../sass/assets/_grid.scss */
   .col-sm-7 {
     width: 58.33333333%;
   }
 
-  /* line 115, ../sass/assets/_base.scss */
+  /* line 90, ../sass/assets/_grid.scss */
   .col-sm-6 {
     width: 50%;
   }
 
-  /* line 118, ../sass/assets/_base.scss */
+  /* line 93, ../sass/assets/_grid.scss */
   .col-sm-5 {
     width: 41.66666667%;
   }
 
-  /* line 121, ../sass/assets/_base.scss */
+  /* line 96, ../sass/assets/_grid.scss */
   .col-sm-4 {
     width: 33.33333333%;
   }
 
-  /* line 124, ../sass/assets/_base.scss */
+  /* line 99, ../sass/assets/_grid.scss */
   .col-sm-3 {
     width: 25%;
   }
 
-  /* line 127, ../sass/assets/_base.scss */
+  /* line 102, ../sass/assets/_grid.scss */
   .col-sm-2 {
     width: 16.66666667%;
   }
 
-  /* line 130, ../sass/assets/_base.scss */
+  /* line 105, ../sass/assets/_grid.scss */
   .col-sm-1 {
     width: 8.33333333%;
   }
 }
 @media (min-width: 1024px) {
-  /* line 135, ../sass/assets/_base.scss */
+  /* line 110, ../sass/assets/_grid.scss */
   .container-fluid {
     width: 1020px;
   }
 
-  /* line 138, ../sass/assets/_base.scss */
+  /* line 113, ../sass/assets/_grid.scss */
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
 
-  /* line 141, ../sass/assets/_base.scss */
+  /* line 116, ../sass/assets/_grid.scss */
   .col-md-12 {
     width: 100%;
   }
 
-  /* line 144, ../sass/assets/_base.scss */
+  /* line 119, ../sass/assets/_grid.scss */
   .col-md-11 {
     width: 91.66666667%;
   }
 
-  /* line 147, ../sass/assets/_base.scss */
+  /* line 122, ../sass/assets/_grid.scss */
   .col-md-10 {
     width: 83.33333333%;
   }
 
-  /* line 150, ../sass/assets/_base.scss */
+  /* line 125, ../sass/assets/_grid.scss */
   .col-md-9 {
     width: 75%;
   }
 
-  /* line 153, ../sass/assets/_base.scss */
+  /* line 128, ../sass/assets/_grid.scss */
   .col-md-8 {
     width: 66.66666667%;
   }
 
-  /* line 156, ../sass/assets/_base.scss */
+  /* line 131, ../sass/assets/_grid.scss */
   .col-md-7 {
     width: 58.33333333%;
   }
 
-  /* line 159, ../sass/assets/_base.scss */
+  /* line 134, ../sass/assets/_grid.scss */
   .col-md-6 {
     width: 50%;
   }
 
-  /* line 162, ../sass/assets/_base.scss */
+  /* line 137, ../sass/assets/_grid.scss */
   .col-md-5 {
     width: 41.66666667%;
   }
 
-  /* line 165, ../sass/assets/_base.scss */
+  /* line 140, ../sass/assets/_grid.scss */
   .col-md-4 {
     width: 33.33333333%;
   }
 
-  /* line 168, ../sass/assets/_base.scss */
+  /* line 143, ../sass/assets/_grid.scss */
   .col-md-3 {
     width: 25%;
   }
 
-  /* line 171, ../sass/assets/_base.scss */
+  /* line 146, ../sass/assets/_grid.scss */
   .col-md-2 {
     width: 16.66666667%;
   }
 
-  /* line 174, ../sass/assets/_base.scss */
+  /* line 149, ../sass/assets/_grid.scss */
   .col-md-1 {
     width: 8.33333333%;
   }
@@ -566,29 +617,29 @@ th {
    =================================== */
 @font-face {
   font-family: 'sofia_probold';
-  src: url("mostardesign_-_sofia_pro_bold-webfont.otf") format("otf");
-  src: url("mostardesign_-_sofia_pro_bold-webfont.woff2") format("woff2"), url("mostardesign_-_sofia_pro_bold-webfont.woff") format("woff");
+  src: url("../fonts/mostardesign_-_sofia_pro_bold-webfont.otf") format("otf");
+  src: url("../fonts/mostardesign_-_sofia_pro_bold-webfont.woff2") format("woff2"), url("../fonts/mostardesign_-_sofia_pro_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'sofia_prolight';
-  src: url("mostardesign_-_sofia_pro_light-webfont.otf") format("otf");
-  src: url("mostardesign_-_sofia_pro_light-webfont.woff2") format("woff2"), url("mostardesign_-_sofia_pro_light-webfont.woff") format("woff");
+  src: url("../fonts/mostardesign_-_sofia_pro_light-webfont.otf") format("otf");
+  src: url("../fonts/mostardesign_-_sofia_pro_light-webfont.woff2") format("woff2"), url("../fonts/mostardesign_-_sofia_pro_light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'sofia_promedium';
-  src: url("mostardesign_-_sofia_pro_medium-webfont.otf") format("otf");
-  src: url("mostardesign_-_sofia_pro_medium-webfont.woff2") format("woff2"), url("mostardesign_-_sofia_pro_medium-webfont.woff") format("woff");
+  src: url("../fonts/mostardesign_-_sofia_pro_medium-webfont.otf") format("otf");
+  src: url("../fonts/mostardesign_-_sofia_pro_medium-webfont.woff2") format("woff2"), url("../fonts/mostardesign_-_sofia_pro_medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'sofia_proregular';
-  src: url("mostardesign_-_sofia_pro_regular-webfont.otf") format("otf");
-  src: url("mostardesign_-_sofia_pro_regular-webfont.woff2") format("woff2"), url("mostardesign_-_sofia_pro_regular-webfont.woff") format("woff");
+  src: url("../fonts/mostardesign_-_sofia_pro_regular-webfont.otf") format("otf");
+  src: url("../fonts/mostardesign_-_sofia_pro_regular-webfont.woff2") format("woff2"), url("../fonts/mostardesign_-_sofia_pro_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -599,24 +650,260 @@ th {
    Misc
    =================================== */
 /* ===================================
-   Classes
+   Classes & Mixins
    =================================== */
-/* line 55, ../sass/assets/_vars.scss */
-.hide {
-  display: none;
-}
-
-/* line 58, ../sass/assets/_vars.scss */
-.show {
-  display: block;
+/* line 73, ../sass/assets/_vars.scss */
+#navigation .second-level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===================================
    Navigation rules
    =================================== */
-/* line 13, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 #navigation {
   background-color: #fcfbf9;
+  height: 110px;
+}
+/* line 18, ../sass/main.scss */
+#navigation .lang {
+  float: left;
+  padding-top: 10px;
+}
+/* line 21, ../sass/main.scss */
+#navigation .lang a {
+  font-size: 13px;
+  font-family: "sofia_prolight";
+  padding-left: 26px;
+  background-position: 0 -137px;
+}
+/* line 30, ../sass/main.scss */
+#navigation .login {
+  float: left;
+  letter-spacing: 0.5px;
+  margin-left: 38px;
+  padding-top: 10px;
+}
+/* line 35, ../sass/main.scss */
+#navigation .login a {
+  font-size: 13px;
+  font-family: "sofia_prolight";
+}
+/* line 38, ../sass/main.scss */
+#navigation .login a:hover {
+  font-family: "sofia_promedium";
+}
+/* line 44, ../sass/main.scss */
+#navigation .logo {
+  left: calc(50% - 147px);
+  position: absolute;
+}
+/* line 47, ../sass/main.scss */
+#navigation .logo a {
+  font-size: 34px;
+  font-family: "sofia_proregular";
+  line-height: 20px;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 53, ../sass/main.scss */
+#navigation .logo .first {
+  letter-spacing: 2px;
+}
+/* line 56, ../sass/main.scss */
+#navigation .logo .second {
+  left: 54px;
+  letter-spacing: 1px;
+  opacity: 0;
+  position: absolute;
+}
+/* line 63, ../sass/main.scss */
+#navigation .logo:hover .first {
+  opacity: 0;
+}
+/* line 66, ../sass/main.scss */
+#navigation .logo:hover .second {
+  opacity: 1;
+}
+/* line 72, ../sass/main.scss */
+#navigation .cart,
+#navigation .wishlist {
+  cursor: pointer;
+  float: right;
+  font-size: 13px;
+  font-family: "sofia_prolight";
+  height: 16px;
+  margin-top: 10px;
+  padding-left: 23px;
+}
+/* line 90, ../sass/main.scss */
+#navigation .cart {
+  margin-left: 40px;
+}
+/* line 98, ../sass/main.scss */
+#navigation .first-level div,
+#navigation .first-level span,
+#navigation .first-level a {
+  color: #002d47;
+}
+/* line 104, ../sass/main.scss */
+#navigation .first-level {
+  height: 55px;
+  padding-top: 18px;
+}
+/* line 107, ../sass/main.scss */
+#navigation .first-level div:not(.logo) a {
+  display: table-cell;
+}
+/* line 109, ../sass/main.scss */
+#navigation .first-level div:not(.logo) a:hover {
+  color: #000;
+}
+/* line 115, ../sass/main.scss */
+#navigation .second-level {
+  height: 55px;
+  color: #002d47;
+  font-family: "sofia_prolight";
+}
+/* line 123, ../sass/main.scss */
+#navigation .nav-menu li {
+  border-bottom: 2px solid #fcfbf9;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 19px;
+  padding-bottom: 4px;
+}
+/* line 129, ../sass/main.scss */
+#navigation .nav-menu li:hover {
+  font-family: "sofia_promedium";
+  border-bottom: 2px solid #002d47;
+}
+/* line 134, ../sass/main.scss */
+#navigation .nav-menu .home {
+  width: 22px;
+}
+/* line 138, ../sass/main.scss */
+#navigation .nav-menu li:not(.home) {
+  margin: 0 17px;
+}
+/* line 141, ../sass/main.scss */
+#navigation .nav-menu li:last-child {
+  text-align: center;
+  width: 100px;
+}
+/* line 147, ../sass/main.scss */
+#navigation .search {
+  cursor: pointer;
+  font-size: 13px;
+  height: 18px;
+  position: absolute;
+  padding-left: 24px;
+  right: 10px;
+  top: 15px;
+}
+/* line 156, ../sass/main.scss */
+#navigation .search:hover {
+  color: #000;
+}
+
+/* line 163, ../sass/main.scss */
+#midSection {
+  width: 100%;
+}
+/* line 165, ../sass/main.scss */
+#midSection img {
+  width: 100%;
+}
+
+/* ===================================
+   Slider of file
+   =================================== */
+/* line 174, ../sass/main.scss */
+#slider {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 177, ../sass/main.scss */
+#slider .slides {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+/* line 183, ../sass/main.scss */
+#slider .slide {
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+/* line 190, ../sass/main.scss */
+#slider .slide:not(.active) {
+  position: absolute;
+}
+/* line 193, ../sass/main.scss */
+#slider .left::after {
+  color: #000000;
+  content: "<";
+  display: block;
+  height: 30px;
+  position: relative;
+  width: 40px;
+  z-index: 9999;
+}
+/* line 202, ../sass/main.scss */
+#slider .right::after {
+  color: #000000;
+  content: ">";
+  display: block;
+  float: right;
+  height: 30px;
+  position: relative;
+  width: 40px;
+  z-index: 9999;
+}
+/* line 212, ../sass/main.scss */
+#slider .active {
+  z-index: 1;
+}
+/* line 215, ../sass/main.scss */
+#slider .controlls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+/* line 220, ../sass/main.scss */
+#slider .navs {
+  bottom: 0;
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: calc(50% - 100px);
+}
+/* line 226, ../sass/main.scss */
+#slider .navs li {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 0 2px;
+  text-indent: -9999px;
+  width: 8px;
+}
+/* line 236, ../sass/main.scss */
+#slider .navs .active {
+  background: white;
 }
 
 /* ===================================

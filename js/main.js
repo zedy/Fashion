@@ -13,7 +13,12 @@
    * and personal coding practices.
    */
   $(document).ready(function(){
-
+    
+    $('#slider .right').click(function(){
+      var x = $('#slider .active').width();
+      $('#slider .active').animate({'left': -x});
+    });
+    
   });
   
   

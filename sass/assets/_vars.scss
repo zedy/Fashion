@@ -3,33 +3,33 @@
    =================================== */
 @font-face {
     font-family: 'sofia_probold';
-    src: url('mostardesign_-_sofia_pro_bold-webfont.otf') format('otf');
-    src: url('mostardesign_-_sofia_pro_bold-webfont.woff2') format('woff2'),
-         url('mostardesign_-_sofia_pro_bold-webfont.woff') format('woff');
+    src: url('../fonts/mostardesign_-_sofia_pro_bold-webfont.otf') format('otf');
+    src: url('../fonts/mostardesign_-_sofia_pro_bold-webfont.woff2') format('woff2'),
+         url('../fonts/mostardesign_-_sofia_pro_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sofia_prolight';
-    src: url('mostardesign_-_sofia_pro_light-webfont.otf') format('otf');
-    src: url('mostardesign_-_sofia_pro_light-webfont.woff2') format('woff2'),
-         url('mostardesign_-_sofia_pro_light-webfont.woff') format('woff');
+    src: url('../fonts/mostardesign_-_sofia_pro_light-webfont.otf') format('otf');
+    src: url('../fonts/mostardesign_-_sofia_pro_light-webfont.woff2') format('woff2'),
+         url('../fonts/mostardesign_-_sofia_pro_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sofia_promedium';
-    src: url('mostardesign_-_sofia_pro_medium-webfont.otf') format('otf');
-    src: url('mostardesign_-_sofia_pro_medium-webfont.woff2') format('woff2'),
-         url('mostardesign_-_sofia_pro_medium-webfont.woff') format('woff');
+    src: url('../fonts/mostardesign_-_sofia_pro_medium-webfont.otf') format('otf');
+    src: url('../fonts/mostardesign_-_sofia_pro_medium-webfont.woff2') format('woff2'),
+         url('../fonts/mostardesign_-_sofia_pro_medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'sofia_proregular';
-    src: url('mostardesign_-_sofia_pro_regular-webfont.otf') format('otf');
-    src: url('mostardesign_-_sofia_pro_regular-webfont.woff2') format('woff2'),
-         url('mostardesign_-_sofia_pro_regular-webfont.woff') format('woff');
+    src: url('../fonts/mostardesign_-_sofia_pro_regular-webfont.otf') format('otf');
+    src: url('../fonts/mostardesign_-_sofia_pro_regular-webfont.woff2') format('woff2'),
+         url('../fonts/mostardesign_-_sofia_pro_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,6 +38,9 @@
    =================================== */
 
 $header-bg: #fcfbf9;
+$header-main: #002d47;
+$header-action: #000;
+
 
 /* ===================================
    Misc
@@ -49,12 +52,26 @@ $sofia-m: 'sofia_promedium';
 $sofia-r: 'sofia_proregular';
 
 /* ===================================
-   Classes
+   Classes & Mixins
    =================================== */
   
-.hide {
-  display: none;
-}
-.show {
-  display: block;
+@mixin opacity($duration) {
+  -webkit-transition-property: opacity;
+     -moz-transition-property: opacity;
+       -o-transition-property: opacity;
+           transition-property:opacity;
+  -webkit-transition-duration: $duration;
+     -moz-transition-duration: $duration;
+       -o-transition-duration: $duration;
+          transition-duration: $duration;
+  -webkit-transition-timing-function: linear;
+     -moz-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+}  
+  
+%flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

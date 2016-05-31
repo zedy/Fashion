@@ -20,28 +20,28 @@
         <!-- Header section -->
         <header id="navigation">
             <div class="container-fluid">
-                <div class="main first-level">
+                <div class="main first-level col-xs-12">                    
                     <div class="lang">
                         <a href="#">NL</a>
                     </div>
                     <div class="login">
-                        <a href="#">login</a>
-                        <a href="#">signup</a>
+                        <a href="#">login / sign up</a>
+                    </div>                                    
+                    <div class="cart">
+                        <a href="#">4</a>
                     </div>
-                    <div class="title">
-                        <span class="first">every.day.counts</span>
-                        <span class="second">9 may 2014</span>
-                    </div>
-                    <span class="wishlist">
-                        0
-                    </span>
-                    <span class="cart">
-                        4
-                    </span>
+                    <div class="wishlist">
+                        <a href="#">0</a>
+                    </div> 
+                    <div class="logo">
+                        <a href="#" class="first">every.day.counts</a>
+                        <a href="#" class="second">9 may 2014</a>
+                    </div>                      
                 </div><!-- /.main -->
-                <div class="menu second-level">
+                <div class="clearfix"></div>
+                <div class="menu second-level col-xs-12">
                     <ul class="nav-menu">
-                        <li>home</li>
+                        <li class="home">&nbsp;</li>
                         <li>women</li>
                         <li>men</li>
                         <li>experience</li>
@@ -65,8 +65,29 @@
         </header>
         
         <!-- Mid section | slider, other elements -->
-        <section id="midSection">
-            
+        <section class="mid-section">
+            <div id="slider" class="slider">
+                <div class="slides">
+                    <div class="active first slide">
+                        <img class="img-resize" src="images/slider/1_lg-min.jpg" />
+                    </div>
+                    <div class="slide">
+                        <img class="img-resize" src="images/slider/2_lg-min.jpg" />
+                    </div>
+                    <div class="last slide">
+                        <img class="img-resize" src="images/slider/3_lg-min.jpg" />
+                    </div>
+                </div>
+                <div class="controlls">
+                    <span class="left">&nbsp;</span>
+                    <span class="right">&nbsp;</span>
+                </div>
+                <ul class="navs">
+                    <li class="active" data-id="1">1</li>
+                    <li data-id="2">2</li>
+                    <li data-id="3">3</li>
+                </ul>
+            </div><!-- /.slider -->
         </section>
         
         <!-- Footer section -->

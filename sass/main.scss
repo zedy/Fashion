@@ -4,6 +4,7 @@
 @import "sprites/_sprite_bundle";
 @import "assets/_normalize";
 @import "assets/base";
+@import "assets/grid";
 @import "assets/vars";
 
 /* ===================================
@@ -12,6 +13,230 @@
 
 #navigation {
   background-color: $header-bg;
+  height: 110px;
+  
+  .lang {
+    float: left; 
+    padding-top: 10px;   
+    a {      
+      font-size: 13px;
+      font-family: $sofia-l;
+      padding-left: 26px;
+      @extend .small_icons-nl_flag;
+      @include sprite-background-position($small_icons-sprites, nl_flag, 0, 3px);
+    } 
+  }
+  
+  .login {
+    float: left;
+    letter-spacing: 0.5px;
+    margin-left: 38px;
+    padding-top: 10px;
+    a {
+      font-size: 13px;
+      font-family: $sofia-l;
+      &:hover {
+        font-family: $sofia-m;
+      }
+    }
+  }
+  
+  .logo {
+    left: calc(50% - 147px);
+    position: absolute;
+    a {
+      font-size: 34px;
+      font-family: $sofia-r;
+      line-height: 20px;
+      @include opacity(0.2s);
+    }
+    .first {
+      letter-spacing: 2px;
+    }
+    .second {
+      left: 54px;
+      letter-spacing: 1px;
+      opacity: 0;
+      position: absolute;
+    }
+    &:hover {
+      .first {
+        opacity: 0;
+      }
+      .second {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .cart,
+  .wishlist {
+    cursor: pointer;
+    float: right;
+    font-size: 13px;
+    font-family: $sofia-l;
+    height: 16px;
+    margin-top: 10px;
+    padding-left: 23px;    
+  }
+   
+  .wishlist {
+    @extend .small_icons-wish;
+    &:hover {
+      @extend .small_icons-wishActive;     
+    }
+  }
+  
+  .cart {
+    margin-left: 40px;
+    @extend .small_icons-cart;
+    &:hover {
+      @extend .small_icons-cartActive;     
+    }
+  }
+  
+  .first-level div,
+  .first-level span,
+  .first-level a {
+    color: $header-main;
+  }
+  
+  .first-level {
+    height: 55px;
+    padding-top: 18px;
+    div:not(.logo) a {
+      display: table-cell;
+      &:hover {
+        color: $header-action;
+      }
+    }
+  }
+  
+  .second-level {
+    height: 55px;
+    color: $header-main;
+    font-family: $sofia-l;
+    @extend %flexbox;
+  }
+  
+  .nav-menu {    
+    li {
+      border-bottom: 2px solid $header-bg;      
+      cursor: pointer;
+      display: inline-block;
+      font-size: 19px;      
+      padding-bottom: 4px;      
+      &:hover {
+        font-family: $sofia-m;
+        border-bottom: 2px solid $header-main;
+      } 
+    }
+    .home {
+      width: 22px;
+      @extend .small_icons-home;
+    }
+    li:not(.home) {
+      margin: 0 17px;
+    }
+    li:last-child {
+      text-align: center;
+      width:100px;
+    }
+  }
+  
+  .search {
+    cursor: pointer;
+    font-size: 13px;      
+    height: 18px;
+    position: absolute;
+    padding-left: 24px;
+    right: 10px;
+    top: 15px;
+    @extend .small_icons-search;
+    &:hover {
+      color: $header-action;
+      @extend .small_icons-searchActive;
+    }
+  }
+  
+}
+#midSection {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+/* ===================================
+   Slider of file
+   =================================== */
+
+#slider {
+  width: 100%;
+  overflow: hidden;
+  .slides {
+    width: 100%;
+    position: relative;
+    display: block;
+    //overflow: hidden;
+  }
+  .slide {
+    //height: 100%;
+    width: 100%;
+    //position: absolute;
+    position: relative;
+    top: 0;
+  }
+  .slide:not(.active) {
+    position: absolute;
+  }
+  .left::after {
+    color: #000000;
+    content: "<";
+    display: block;
+    height: 30px;
+    position: relative;
+    width: 40px;
+    z-index: 9999;
+  }
+  .right::after {
+    color: #000000;
+    content: ">";
+    display: block;
+    float: right;
+    height: 30px;
+    position: relative;
+    width: 40px;
+    z-index: 9999;
+  }
+  .active {
+    z-index: 1;
+  }
+  .controlls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .navs {
+    bottom: 0;
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: calc(50% - 100px);
+    li {
+      border-radius: 10px;
+      background: rgba(255,255,255, 0.5);
+      cursor: pointer;
+      display: inline-block;
+      height: 8px;
+      margin:0 2px;
+      text-indent: -9999px;            
+      width: 8px;
+    }
+    .active {
+      background: rgba(255,255,255, 1); 
+    }
+  }
 }
 
 /* ===================================
