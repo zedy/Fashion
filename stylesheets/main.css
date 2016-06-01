@@ -659,6 +659,22 @@ ul {
   align-items: center;
 }
 
+/* line 79, ../sass/assets/_vars.scss */
+#slider .left, #slider .right {
+  content: " ";
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 12px 18px;
+  background-color: #001d2d;
+  display: inline-block;
+  cursor: pointer;
+  height: 50px;
+  opacity: 0;
+  position: relative;
+  width: 34px;
+  z-index: 9999;
+}
+
 /* ===================================
    Navigation rules
    =================================== */
@@ -846,51 +862,66 @@ ul {
   width: 100%;
   position: relative;
   top: 0;
+  z-index: 1;
 }
-/* line 190, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 #slider .slide:not(.active) {
   position: absolute;
 }
-/* line 193, ../sass/main.scss */
-#slider .left::after {
-  color: #000000;
-  content: "<";
-  display: block;
-  height: 30px;
-  position: relative;
-  width: 40px;
-  z-index: 9999;
+/* line 194, ../sass/main.scss */
+#slider .left {
+  background-image: url("../images/arrow_left.png");
+  margin-left: -6px;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
-/* line 202, ../sass/main.scss */
-#slider .right::after {
-  color: #000000;
-  content: ">";
-  display: block;
+/* line 200, ../sass/main.scss */
+#slider .right {
   float: right;
-  height: 30px;
-  position: relative;
-  width: 40px;
-  z-index: 9999;
+  background-image: url("../images/arrow_right.png");
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
-/* line 212, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 #slider .active {
-  z-index: 1;
+  z-index: 2;
 }
-/* line 215, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 #slider .controlls {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 25px);
   width: 100%;
 }
-/* line 220, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 #slider .navs {
   bottom: 0;
   display: block;
   position: absolute;
   text-align: center;
   left: calc(50% - 100px);
+  z-index: 3;
 }
-/* line 226, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 #slider .navs li {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.5);
@@ -901,9 +932,13 @@ ul {
   text-indent: -9999px;
   width: 8px;
 }
-/* line 236, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 #slider .navs .active {
   background: white;
+}
+/* line 236, ../sass/main.scss */
+#slider:hover .controlls span {
+  opacity: 1;
 }
 
 /* ===================================
