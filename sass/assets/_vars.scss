@@ -70,6 +70,14 @@ $sofia-r: 'sofia_proregular';
           transition-timing-function: linear;
 }  
   
+%fullscreen {
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  position: absolute;
+}  
+  
 %flexbox {
   display: flex;
   justify-content: center;
@@ -81,7 +89,7 @@ $sofia-r: 'sofia_proregular';
   background-position: 10px center;
   background-repeat: no-repeat;
   background-size: 12px 18px; 
-  background-color: #001d2d;
+  background-color: #002d47;
   display: inline-block;
   cursor: pointer;
   height: 50px;

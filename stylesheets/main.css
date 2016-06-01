@@ -1,9 +1,9 @@
 /* ===================================
    Improts
    =================================== */
-/* line 112, small_icons/*.png */
-.small_icons-sprite, .small_icons-bread, .small_icons-cart, #navigation .cart, .small_icons-cartActive, #navigation .cart:hover, .small_icons-home, #navigation .nav-menu .home, .small_icons-nl_flag, #navigation .lang a, .small_icons-search, #navigation .search, .small_icons-searchActive, #navigation .search:hover, .small_icons-wish, #navigation .wishlist, .small_icons-wishActive, #navigation .wishlist:hover {
-  background-image: url('/images/small_icons-s63b0fa4146.png');
+/* line 232, small_icons/*.png */
+.small_icons-sprite, .small_icons-bread, .small_icons-cart, #navigation .cart, .small_icons-cartActive, #navigation .cart:hover, .small_icons-fb, #information .fb, .small_icons-fb2, #information .fb:hover, .small_icons-gp, #information .gp, .small_icons-gp2, #information .gp:hover, .small_icons-home, #navigation .nav-menu .home, .small_icons-in, #information .in, .small_icons-in2, #information .in:hover, .small_icons-nl_flag, #navigation .lang a, .small_icons-pin, #contact .info .pin, .small_icons-pt, #information .pt, .small_icons-pt2, #information .pt:hover, .small_icons-search, #navigation .search, .small_icons-searchActive, #navigation .search:hover, .small_icons-small_arrow_blue, #contact .info a, .small_icons-small_arrow_white, #contact .newsletter .btn, .small_icons-tw, #information .tw, .small_icons-tw2, #information .tw:hover, .small_icons-wish, #navigation .wishlist, .small_icons-wishActive, #navigation .wishlist:hover, .small_icons-yt, #information .yt, .small_icons-yt2, #information .yt:hover {
+  background-image: url('/images/small_icons-s8806989e3e.png');
   background-repeat: no-repeat;
 }
 
@@ -23,33 +23,108 @@
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-home, #navigation .nav-menu .home {
+.small_icons-fb, #information .fb {
   background-position: 0 -103px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-fb2, #information .fb:hover {
+  background-position: 0 -141px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-gp, #information .gp {
+  background-position: 0 -179px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-gp2, #information .gp:hover {
+  background-position: 0 -216px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-home, #navigation .nav-menu .home {
+  background-position: 0 -253px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-in, #information .in {
+  background-position: 0 -290px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-in2, #information .in:hover {
+  background-position: 0 -327px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-nl_flag, #navigation .lang a {
-  background-position: 0 -140px;
+  background-position: 0 -364px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-pin, #contact .info .pin {
+  background-position: 0 -395px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-pt, #information .pt {
+  background-position: 0 -449px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-pt2, #information .pt:hover {
+  background-position: 0 -487px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-search, #navigation .search {
-  background-position: 0 -171px;
+  background-position: 0 -525px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-searchActive, #navigation .search:hover {
-  background-position: 0 -208px;
+  background-position: 0 -562px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-small_arrow_blue, #contact .info a {
+  background-position: 0 -599px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-small_arrow_white, #contact .newsletter .btn {
+  background-position: 0 -630px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-tw, #information .tw {
+  background-position: 0 -661px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-tw2, #information .tw:hover {
+  background-position: 0 -696px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-wish, #navigation .wishlist {
-  background-position: 0 -245px;
+  background-position: 0 -731px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-wishActive, #navigation .wishlist:hover {
-  background-position: 0 -280px;
+  background-position: 0 -766px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-yt, #information .yt {
+  background-position: 0 -801px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-yt2, #information .yt:hover {
+  background-position: 0 -839px;
 }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -653,19 +728,28 @@ ul {
    Classes & Mixins
    =================================== */
 /* line 73, ../sass/assets/_vars.scss */
-#navigation .second-level {
+#slider .caption, #boxes .box-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+}
+
+/* line 81, ../sass/assets/_vars.scss */
+#navigation .second-level, #slider .caption, #boxes .box-caption, .notice {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* line 79, ../sass/assets/_vars.scss */
+/* line 87, ../sass/assets/_vars.scss */
 #slider .left, #slider .right {
   content: " ";
   background-position: 10px center;
   background-repeat: no-repeat;
   background-size: 12px 18px;
-  background-color: #001d2d;
+  background-color: #002d47;
   display: inline-block;
   cursor: pointer;
   height: 50px;
@@ -693,7 +777,7 @@ ul {
   font-size: 13px;
   font-family: "sofia_prolight";
   padding-left: 26px;
-  background-position: 0 -137px;
+  background-position: 0 -361px;
 }
 /* line 30, ../sass/main.scss */
 #navigation .login {
@@ -851,24 +935,24 @@ ul {
   width: 100%;
   overflow: hidden;
 }
-/* line 177, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 #slider .slides {
   width: 100%;
   position: relative;
   display: block;
 }
-/* line 183, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 #slider .slide {
-  width: 100%;
   position: relative;
   top: 0;
+  width: 100%;
   z-index: 1;
 }
 /* line 191, ../sass/main.scss */
 #slider .slide:not(.active) {
   position: absolute;
 }
-/* line 194, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 #slider .left {
   background-image: url("../images/arrow_left.png");
   margin-left: -6px;
@@ -885,7 +969,7 @@ ul {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 200, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 #slider .right {
   float: right;
   background-image: url("../images/arrow_right.png");
@@ -902,17 +986,42 @@ ul {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 206, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 #slider .active {
   z-index: 2;
 }
-/* line 209, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
+#slider .inner {
+  text-align: center;
+}
+/* line 217, ../sass/main.scss */
+#slider .caption {
+  color: #fff;
+}
+/* line 221, ../sass/main.scss */
+#slider .caption h3 {
+  font-size: 110px;
+  font-family: "sofia_probold";
+  margin: 0;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.35);
+}
+/* line 227, ../sass/main.scss */
+#slider .caption span {
+  font-size: 25px;
+  font-family: "sofia_prolight";
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.35);
+}
+/* line 234, ../sass/main.scss */
 #slider .controlls {
   position: absolute;
   top: calc(50% - 25px);
   width: 100%;
 }
-/* line 214, ../sass/main.scss */
+/* line 238, ../sass/main.scss */
+#slider .controlls span:hover {
+  background-color: #001d2d;
+}
+/* line 243, ../sass/main.scss */
 #slider .navs {
   bottom: 0;
   display: block;
@@ -921,7 +1030,7 @@ ul {
   left: calc(50% - 100px);
   z-index: 3;
 }
-/* line 221, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 #slider .navs li {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.5);
@@ -932,13 +1041,274 @@ ul {
   text-indent: -9999px;
   width: 8px;
 }
-/* line 231, ../sass/main.scss */
+/* line 261, ../sass/main.scss */
 #slider .navs .active {
   background: white;
 }
-/* line 236, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 #slider:hover .controlls span {
   opacity: 1;
+}
+
+/* ===================================
+   Boxes
+   =================================== */
+/* line 278, ../sass/main.scss */
+#boxes {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+/* line 283, ../sass/main.scss */
+#boxes .left,
+#boxes .right {
+  background-color: #002d47;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+}
+/* line 292, ../sass/main.scss */
+#boxes img {
+  opacity: 0.9;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 295, ../sass/main.scss */
+#boxes img:hover {
+  opacity: 0.85;
+}
+/* line 303, ../sass/main.scss */
+#boxes .box-caption span {
+  color: #fff;
+  font-size: 50px;
+  font-family: "sofia_promedium";
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+  z-index: 5;
+}
+
+/* ===================================
+   Notice
+   =================================== */
+/* line 318, ../sass/main.scss */
+.notice {
+  border-top: 1px solid #dddad6;
+  border-bottom: 1px solid #dddad6;
+  height: 69px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+/* line 326, ../sass/main.scss */
+.notice h4 {
+  color: #002d47;
+  font-size: 25px;
+  font-family: "sofia_promedium";
+  margin: 0;
+}
+
+/* ===================================
+   Products
+   =================================== */
+/* line 338, ../sass/main.scss */
+.products {
+  border-bottom: 1px solid #dddad6;
+  position: relative;
+  width: 100%;
+}
+/* line 343, ../sass/main.scss */
+.products .left {
+  padding-left: 0;
+}
+/* line 347, ../sass/main.scss */
+.products .right {
+  padding-right: 0;
+}
+/* line 351, ../sass/main.scss */
+.products .iBox {
+  width: 50%;
+  float: left;
+}
+/* line 354, ../sass/main.scss */
+.products .iBox .image {
+  padding-right: 10px;
+}
+/* line 360, ../sass/main.scss */
+.products .oBox .image {
+  padding-right: 10px;
+}
+/* line 363, ../sass/main.scss */
+.products .oBox .details {
+  padding-left: 10px;
+  padding-top: 38px;
+  color: #002d47;
+}
+/* line 370, ../sass/main.scss */
+.products h3 {
+  font-size: 19px;
+  font-family: "sofia_promedium";
+  margin: 0;
+}
+/* line 376, ../sass/main.scss */
+.products p {
+  font-size: 14op;
+  font-family: "sofia_prolight";
+  line-height: 1.5;
+  margin-top: 18px;
+}
+/* line 383, ../sass/main.scss */
+.products a {
+  font-size: 14px;
+  font-family: "sofia_probold";
+  color: #002d47;
+  margin-top: 20px;
+  display: block;
+}
+
+/* ===================================
+   Contactr block
+   =================================== */
+/* line 396, ../sass/main.scss */
+#contact {
+  background-color: #fcfbf9;
+  padding: 42px 0 33px 0;
+}
+/* line 400, ../sass/main.scss */
+#contact .sub-menu {
+  display: inline-block;
+  float: left;
+}
+/* line 403, ../sass/main.scss */
+#contact .sub-menu li {
+  padding: 9px 0;
+}
+/* line 406, ../sass/main.scss */
+#contact .sub-menu a {
+  color: #002d47;
+  font-size: 15px;
+  font-family: "sofia_promedium";
+}
+/* line 410, ../sass/main.scss */
+#contact .sub-menu a:hover {
+  color: #000;
+  font-family: "sofia_probold";
+}
+/* line 417, ../sass/main.scss */
+#contact .newsletter {
+  display: block;
+  margin: 0 auto;
+  width: 290px;
+}
+/* line 422, ../sass/main.scss */
+#contact .newsletter p {
+  display: block;
+  font-size: 14px;
+  font-family: "sofia_prolight";
+  line-height: 1.5;
+  margin: 0;
+}
+/* line 429, ../sass/main.scss */
+#contact .newsletter .email {
+  border: 1px solid #dddad6;
+  display: block;
+  font-size: 14px;
+  font-family: "sofia_prolight";
+  height: 43px;
+  margin: 15px 0;
+  padding-left: 10px;
+  width: 100%;
+}
+/* line 439, ../sass/main.scss */
+#contact .newsletter .btn {
+  background-color: #002d47;
+  border: none;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "sofia_probold";
+  padding: 0 29px 0 15px;
+  height: 43px;
+}
+/* line 450, ../sass/main.scss */
+#contact .newsletter .btn:nth-child(2) {
+  margin-right: 12px;
+  background-position: 79px -614px;
+}
+/* line 454, ../sass/main.scss */
+#contact .newsletter .btn:nth-child(3) {
+  margin-right: 12px;
+  background-position: 58px -614px;
+}
+/* line 458, ../sass/main.scss */
+#contact .newsletter .btn:nth-child(4) {
+  background-position: 66px -614px;
+}
+/* line 463, ../sass/main.scss */
+#contact .info {
+  float: right;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 467, ../sass/main.scss */
+#contact .info .pin {
+  margin: 0 auto;
+  display: block;
+  height: 35px;
+  width: 26px;
+}
+/* line 474, ../sass/main.scss */
+#contact .info p {
+  color: #002d47;
+  display: block;
+  font-size: 14px;
+  font-family: "sofia_prolight";
+}
+/* line 481, ../sass/main.scss */
+#contact .info a {
+  color: #002d47;
+  font-family: "sofia_probold";
+  padding-right: 20px;
+  background-position: 153px -593px;
+}
+
+/* ===================================
+   Footer block
+   =================================== */
+/* line 495, ../sass/main.scss */
+footer {
+  background-color: #002d47;
+}
+
+/* line 501, ../sass/main.scss */
+#information p {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "sofia_prolight";
+}
+/* line 508, ../sass/main.scss */
+#information .socials {
+  float: right;
+}
+/* line 510, ../sass/main.scss */
+#information .socials li {
+  display: inline-block;
+}
+/* line 513, ../sass/main.scss */
+#information .socials a {
+  display: block;
+  width: 20px;
+  height: 30px;
 }
 
 /* ===================================

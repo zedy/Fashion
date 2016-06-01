@@ -174,43 +174,72 @@
 #slider {
   width: 100%;
   overflow: hidden;
+  
   .slides {
     width: 100%;
     position: relative;
     display: block;
-    //overflow: hidden;
   }
+  
   .slide {
-    //height: 100%;
-    width: 100%;
-    //position: absolute;
     position: relative;
     top: 0;
+    width: 100%;
     z-index: 1;
   }
+  
   .slide:not(.active) {
     position: absolute;
   }
+  
   .left {    
     background-image: url("../images/arrow_left.png");  
     margin-left: -6px;  
     @extend %singlecontroll;  
     @include opacity(0.4s);
   }
+  
   .right {
     float: right;
     background-image: url("../images/arrow_right.png");
     @include opacity(0.4s);   
     @extend %singlecontroll;    
   }
+  
   .active {
     z-index: 2;
   }
+  
+  .inner {
+    text-align: center;
+  }
+  
+  .caption {
+    color: #fff;
+    @extend %fullscreen;
+    @extend %flexbox;
+    h3 {
+      font-size: 110px;
+      font-family: $sofia-b;
+      margin:0;
+      text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.35);
+    }
+    span {
+      font-size: 25px;
+      font-family: $sofia-l;
+      text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
   .controlls {      
     position: absolute;
     top: calc(50% - 25px);
     width: 100%;
+    span:hover {
+      background-color: #001d2d;
+    }
   }
+  
   .navs {
     bottom: 0;
     display: block;
@@ -228,10 +257,13 @@
       text-indent: -9999px;            
       width: 8px;
     }
+    
     .active {
       background: rgba(255,255,255, 1); 
     }
+    
   }
+  
   &:hover {
     .controlls span {
       opacity: 1;
@@ -240,5 +272,291 @@
 }
 
 /* ===================================
+   Boxes
+   =================================== */
+
+#boxes {
+  display: block;
+  position: relative;
+  width: 100%;
+  
+  .left,
+  .right {    
+    background-color: $header-main;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 50%;    
+  }
+  
+  img {
+    opacity: 0.9;
+    @include opacity(0.3s);
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+  
+  .box-caption {
+    @extend %fullscreen;
+    @extend %flexbox;
+    span {
+      color: #fff;
+      font-size: 50px;
+      font-family: $sofia-m;      
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
+      z-index: 5;
+    }
+  }
+  
+}
+
+/* ===================================
+   Notice
+   =================================== */
+
+.notice {
+  border-top: 1px solid #dddad6;
+  border-bottom: 1px solid #dddad6;
+  height: 69px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  @extend %flexbox;
+  h4 {
+    color: $header-main;
+    font-size: 25px;
+    font-family: $sofia-m;
+    margin:0;    
+  }
+}
+
+/* ===================================
+   Products
+   =================================== */
+
+.products {
+  border-bottom: 1px solid #dddad6;
+  position: relative;
+  width: 100%;
+  
+  .left {
+    padding-left: 0;
+  }
+  
+  .right {
+    padding-right: 0;    
+  }
+  
+  .iBox {
+    width: 50%;
+    float: left;
+    .image {
+      padding-right: 10px;
+    }
+  }
+  
+  .oBox {
+    .image {
+      padding-right: 10px;
+    }
+    .details {
+      padding-left: 10px;
+      padding-top: 38px;
+      color: $header-main;
+    }
+  }
+  
+  h3 {
+   font-size: 19px;
+   font-family: $sofia-m;
+   margin: 0;
+  }
+  
+  p {
+    font-size: 14op;
+    font-family: $sofia-l;
+    line-height: 1.5; 
+    margin-top: 18px;
+  }
+  
+  a {
+    font-size: 14px;
+    font-family: $sofia-b;
+    color: $header-main;
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+/* ===================================
+   Contactr block
+   =================================== */
+
+#contact {  
+  background-color: #fcfbf9;
+  padding: 42px 0 33px 0;  
+  
+  .sub-menu {
+    display: inline-block;
+    float: left;
+    li {
+      padding: 9px 0;
+    }
+    a {
+      color: $header-main;
+      font-size: 15px;
+      font-family: $sofia-m;
+      &:hover {
+        color: #000;
+        font-family: $sofia-b;
+      }
+    }
+  }
+  
+  .newsletter {
+    display: block;
+    margin: 0 auto;
+    width: 290px;
+    
+    p {
+      display: block;
+      font-size: 14px;
+      font-family: $sofia-l;
+      line-height: 1.5;
+      margin: 0;
+    }
+    .email {
+      border: 1px solid #dddad6;
+      display: block;
+      font-size: 14px;
+      font-family: $sofia-l;      
+      height: 43px;
+      margin: 15px 0;
+      padding-left: 10px;
+      width: 100%;
+    }
+    .btn {
+      background-color: $header-main;
+      border: none;
+      color: white;
+      display: inline-block;
+      font-size: 14px;
+      font-family: $sofia-b;
+      padding: 0 29px 0 15px;
+      height: 43px;
+      @extend .small_icons-small_arrow_white;      
+    }
+    .btn:nth-child(2) {
+      margin-right: 12px;
+      @include sprite-background-position($small_icons-sprites, small_arrow_white, 79px, 16px);
+    }
+    .btn:nth-child(3) {
+      margin-right: 12px;
+      @include sprite-background-position($small_icons-sprites, small_arrow_white, 58px, 16px);
+    }
+    .btn:nth-child(4) {
+      @include sprite-background-position($small_icons-sprites, small_arrow_white, 66px, 16px);
+    }
+  }
+  
+  .info {
+    float: right;
+    text-align: center;    
+    font-size: 14px;
+    .pin {
+      margin: 0 auto;
+      display: block;
+      height: 35px;
+      width: 26px;
+      @extend .small_icons-pin;
+    }
+    p {
+      color: $header-main;
+      display: block;
+      font-size: 14px;
+      font-family: $sofia-l;
+      
+    }
+    a {
+      color: $header-main;
+      font-family: $sofia-b;
+      padding-right: 20px;
+      @extend .small_icons-small_arrow_blue;
+      @include sprite-background-position($small_icons-sprites, small_arrow_blue, 153px, 6px);
+    }
+  }
+}
+
+/* ===================================
+   Footer block
+   =================================== */
+
+footer {
+  background-color: $header-main;
+}
+
+#information {  
+  
+  p {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-family: $sofia-l;
+  }
+  
+  .socials {
+    float: right;
+    li {
+       display: inline-block;
+    }
+    a {
+      display: block;
+      width: 20px;
+      height: 30px;
+    }
+  }
+  
+  .fb {
+    @extend .small_icons-fb;
+    &:hover {
+      @extend .small_icons-fb2;
+    }
+  }
+  .yt {
+    @extend .small_icons-yt;
+    &:hover {
+      @extend .small_icons-yt2;
+    }
+  }
+  .in {
+    @extend .small_icons-in;
+    &:hover {
+      @extend .small_icons-in2;
+    }
+  }
+  .gp {
+    @extend .small_icons-gp;
+    &:hover {
+      @extend .small_icons-gp2;
+    }
+  }
+  .pt {
+    @extend .small_icons-pt;
+    &:hover {
+      @extend .small_icons-pt2;
+    }
+  }
+  .tw {
+    @extend .small_icons-tw;
+    &:hover {
+      @extend .small_icons-tw2;
+    }
+  }
+  
+}
+
+/* ===================================
    End of file
    =================================== */
+  

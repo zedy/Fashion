@@ -17,6 +17,7 @@
   $(document).ready(function(){
     
     main_slider_controlls();
+    main_box_resizing();
     
   });
   
@@ -33,9 +34,11 @@
    */
   function main_slider_controlls() {
     
+    var id;
+    
     // show previous slide        
     $prev.click(function(e){
-      var $active = $('#slider').find('.active');
+      var $active = $('#slider .slides').find('.active');
       $active.fadeOut(150).removeClass('active');
       
       if ($active.hasClass('first')) {
@@ -44,11 +47,13 @@
         $active.prev().fadeIn(150).addClass('active');
       }
       
+      id = $('#slider .slides').find('.active').attr('data-id');
+      main_slider_nav_controll(id);
     });
     
     // show next slide
     $next.click(function(e){
-      var $active = $('#slider').find('.active');      
+      var $active = $('#slider .slides').find('.active');      
       $active.fadeOut(150).removeClass('active');
       
       if ($active.hasClass('last')) {
@@ -56,10 +61,9 @@
       } else {
         $active.next().fadeIn(150).addClass('active');
       }
-      
-    });
-    
-    main_slider_nav_controll();
+      id = $('#slider .slides').find('.active').attr('data-id'); 
+      main_slider_nav_controll(id);
+    });              
     
   }
   
@@ -67,9 +71,23 @@
    * Logic behind the navs on the slider
    * Is called when the event for moving
    * a slide is fired.
+   * 
+   * @param int position
+   *  The position where the new nav is pointed at.
+   * 
    */
-  function main_slider_nav_controll() {
-    
+  function main_slider_nav_controll(position) {
+    $('#slider .navs').find('.active').removeClass('active');
+    $('#slider .navs').find('li[data-id="' + position + '"]').addClass('active');
+  }
+  
+  /**
+   * Makes the #boxes elements perfectly squared
+   * during all occasions.
+   */
+  function main_box_resizing() {
+    var width = $('#boxes .left').width();
+    $('#boxes > div').height(width);
   }
   
   
