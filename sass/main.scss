@@ -395,18 +395,24 @@
 
 #contact {  
   background-color: #fcfbf9;
-  padding: 42px 0 33px 0;  
+  padding: 30px 0 42px 0;  
+  
+  .container-fluid {
+    padding: 0 14px;
+  }
   
   .sub-menu {
     display: inline-block;
     float: left;
     li {
-      padding: 9px 0;
+      padding-bottom: 15px;
     }
     a {
       color: $header-main;
+      display: block;
       font-size: 15px;
       font-family: $sofia-m;
+      letter-spacing: 1px;
       &:hover {
         color: #000;
         font-family: $sofia-b;
@@ -414,17 +420,15 @@
     }
   }
   
-  .newsletter {
-    display: block;
-    margin: 0 auto;
-    width: 290px;
+  .newsletter {    
     
-    p {
-      display: block;
+    span {
+      display: flex;
       font-size: 14px;
       font-family: $sofia-l;
       line-height: 1.5;
       margin: 0;
+      margin-top: -6px;
     }
     .email {
       border: 1px solid #dddad6;
@@ -432,9 +436,9 @@
       font-size: 14px;
       font-family: $sofia-l;      
       height: 43px;
-      margin: 15px 0;
+      margin: 11px 0 15px 0;
       padding-left: 10px;
-      width: 100%;
+      width: 288px;
     }
     .btn {
       background-color: $header-main;
@@ -460,12 +464,18 @@
     }
   }
   
+  .info.col-xs-4 > div {
+    display: inline-block;
+    padding-right: 13px;
+  }
+  
   .info {
     float: right;
     text-align: center;    
     font-size: 14px;
     .pin {
       margin: 0 auto;
+      margin-bottom: 11px;
       display: block;
       height: 35px;
       width: 26px;
@@ -476,14 +486,16 @@
       display: block;
       font-size: 14px;
       font-family: $sofia-l;
-      
+      margin: 4px;
     }
     a {
       color: $header-main;
+      display: block;
       font-family: $sofia-b;
+      margin-top: 20px;
       padding-right: 20px;
       @extend .small_icons-small_arrow_blue;
-      @include sprite-background-position($small_icons-sprites, small_arrow_blue, 153px, 6px);
+      @include sprite-background-position($small_icons-sprites, small_arrow_blue, 153px, 3px);
     }
   }
 }
@@ -494,6 +506,13 @@
 
 footer {
   background-color: $header-main;
+  height: 50px;
+  padding-top: 15px;
+  
+  .container-fluid {
+    padding: 0 28px;
+  }
+  
 }
 
 #information {  
@@ -507,20 +526,24 @@ footer {
   
   .socials {
     float: right;
+    padding-right: 13px;
     li {
        display: inline-block;
+       margin: 0 10px;
     }
     a {
       display: block;
       width: 20px;
-      height: 30px;
+      height: 20px;
     }
   }
   
   .fb {
     @extend .small_icons-fb;
+    @include sprite-background-position($small_icons-sprites, fb, 6px, 0);
     &:hover {
       @extend .small_icons-fb2;
+      @include sprite-background-position($small_icons-sprites, fb2 , 6px, 0);
     }
   }
   .yt {
@@ -531,14 +554,18 @@ footer {
   }
   .in {
     @extend .small_icons-in;
+    @include sprite-background-position($small_icons-sprites, in, 0, 2px);
     &:hover {
       @extend .small_icons-in2;
+      @include sprite-background-position($small_icons-sprites, in2, 0, 2px);
     }
   }
   .gp {
     @extend .small_icons-gp;
+    @include sprite-background-position($small_icons-sprites, gp, 0, 2px);
     &:hover {
       @extend .small_icons-gp2;
+      @include sprite-background-position($small_icons-sprites, gp2, 0, 2px);
     }
   }
   .pt {
@@ -549,8 +576,10 @@ footer {
   }
   .tw {
     @extend .small_icons-tw;
+    @include sprite-background-position($small_icons-sprites, tw, 0, 2px);
     &:hover {
       @extend .small_icons-tw2;
+      @include sprite-background-position($small_icons-sprites, tw2, 0, 2px);
     }
   }
   

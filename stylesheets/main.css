@@ -436,13 +436,18 @@ a {
 }
 
 /* line 35, ../sass/assets/_base.scss */
+p {
+  margin: 0;
+}
+
+/* line 38, ../sass/assets/_base.scss */
 ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-/* line 40, ../sass/assets/_base.scss */
+/* line 43, ../sass/assets/_base.scss */
 .img-resize {
   width: 100%;
   max-width: 100%;
@@ -1181,54 +1186,55 @@ ul {
 /* line 396, ../sass/main.scss */
 #contact {
   background-color: #fcfbf9;
-  padding: 42px 0 33px 0;
+  padding: 30px 0 42px 0;
 }
 /* line 400, ../sass/main.scss */
+#contact .container-fluid {
+  padding: 0 14px;
+}
+/* line 404, ../sass/main.scss */
 #contact .sub-menu {
   display: inline-block;
   float: left;
 }
-/* line 403, ../sass/main.scss */
+/* line 407, ../sass/main.scss */
 #contact .sub-menu li {
-  padding: 9px 0;
-}
-/* line 406, ../sass/main.scss */
-#contact .sub-menu a {
-  color: #002d47;
-  font-size: 15px;
-  font-family: "sofia_promedium";
+  padding-bottom: 15px;
 }
 /* line 410, ../sass/main.scss */
+#contact .sub-menu a {
+  color: #002d47;
+  display: block;
+  font-size: 15px;
+  font-family: "sofia_promedium";
+  letter-spacing: 1px;
+}
+/* line 416, ../sass/main.scss */
 #contact .sub-menu a:hover {
   color: #000;
   font-family: "sofia_probold";
 }
-/* line 417, ../sass/main.scss */
-#contact .newsletter {
-  display: block;
-  margin: 0 auto;
-  width: 290px;
-}
-/* line 422, ../sass/main.scss */
-#contact .newsletter p {
-  display: block;
+/* line 425, ../sass/main.scss */
+#contact .newsletter span {
+  display: flex;
   font-size: 14px;
   font-family: "sofia_prolight";
   line-height: 1.5;
   margin: 0;
+  margin-top: -6px;
 }
-/* line 429, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 #contact .newsletter .email {
   border: 1px solid #dddad6;
   display: block;
   font-size: 14px;
   font-family: "sofia_prolight";
   height: 43px;
-  margin: 15px 0;
+  margin: 11px 0 15px 0;
   padding-left: 10px;
-  width: 100%;
+  width: 288px;
 }
-/* line 439, ../sass/main.scss */
+/* line 443, ../sass/main.scss */
 #contact .newsletter .btn {
   background-color: #002d47;
   border: none;
@@ -1239,76 +1245,125 @@ ul {
   padding: 0 29px 0 15px;
   height: 43px;
 }
-/* line 450, ../sass/main.scss */
+/* line 454, ../sass/main.scss */
 #contact .newsletter .btn:nth-child(2) {
   margin-right: 12px;
   background-position: 79px -614px;
 }
-/* line 454, ../sass/main.scss */
+/* line 458, ../sass/main.scss */
 #contact .newsletter .btn:nth-child(3) {
   margin-right: 12px;
   background-position: 58px -614px;
 }
-/* line 458, ../sass/main.scss */
+/* line 462, ../sass/main.scss */
 #contact .newsletter .btn:nth-child(4) {
   background-position: 66px -614px;
 }
-/* line 463, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
+#contact .info.col-xs-4 > div {
+  display: inline-block;
+  padding-right: 13px;
+}
+/* line 472, ../sass/main.scss */
 #contact .info {
   float: right;
   text-align: center;
   font-size: 14px;
 }
-/* line 467, ../sass/main.scss */
+/* line 476, ../sass/main.scss */
 #contact .info .pin {
   margin: 0 auto;
+  margin-bottom: 11px;
   display: block;
   height: 35px;
   width: 26px;
 }
-/* line 474, ../sass/main.scss */
+/* line 484, ../sass/main.scss */
 #contact .info p {
   color: #002d47;
   display: block;
   font-size: 14px;
   font-family: "sofia_prolight";
+  margin: 4px;
 }
-/* line 481, ../sass/main.scss */
+/* line 491, ../sass/main.scss */
 #contact .info a {
   color: #002d47;
+  display: block;
   font-family: "sofia_probold";
+  margin-top: 20px;
   padding-right: 20px;
-  background-position: 153px -593px;
+  background-position: 153px -596px;
 }
 
 /* ===================================
    Footer block
    =================================== */
-/* line 495, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 footer {
   background-color: #002d47;
+  height: 50px;
+  padding-top: 15px;
+}
+/* line 512, ../sass/main.scss */
+footer .container-fluid {
+  padding: 0 28px;
 }
 
-/* line 501, ../sass/main.scss */
+/* line 520, ../sass/main.scss */
 #information p {
   color: #fff;
   display: inline-block;
   font-size: 12px;
   font-family: "sofia_prolight";
 }
-/* line 508, ../sass/main.scss */
+/* line 527, ../sass/main.scss */
 #information .socials {
   float: right;
+  padding-right: 13px;
 }
-/* line 510, ../sass/main.scss */
+/* line 530, ../sass/main.scss */
 #information .socials li {
   display: inline-block;
+  margin: 0 10px;
 }
-/* line 513, ../sass/main.scss */
+/* line 534, ../sass/main.scss */
 #information .socials a {
   display: block;
   width: 20px;
-  height: 30px;
+  height: 20px;
+}
+/* line 541, ../sass/main.scss */
+#information .fb {
+  background-position: 6px -103px;
+}
+/* line 544, ../sass/main.scss */
+#information .fb:hover {
+  background-position: 6px -141px;
+}
+/* line 555, ../sass/main.scss */
+#information .in {
+  background-position: 0 -288px;
+}
+/* line 558, ../sass/main.scss */
+#information .in:hover {
+  background-position: 0 -325px;
+}
+/* line 563, ../sass/main.scss */
+#information .gp {
+  background-position: 0 -177px;
+}
+/* line 566, ../sass/main.scss */
+#information .gp:hover {
+  background-position: 0 -214px;
+}
+/* line 577, ../sass/main.scss */
+#information .tw {
+  background-position: 0 -659px;
+}
+/* line 580, ../sass/main.scss */
+#information .tw:hover {
+  background-position: 0 -694px;
 }
 
 /* ===================================
