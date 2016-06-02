@@ -13,7 +13,7 @@
 
 #navigation {
   background-color: $header-bg;
-  height: 110px;
+  //height: 110px;
   
   .lang {
     float: left; 
@@ -146,12 +146,12 @@
   
   .search {
     cursor: pointer;
-    font-size: 13px;      
+    font-size: 14px;      
     height: 18px;
     position: absolute;
     padding-left: 24px;
-    right: 10px;
-    top: 15px;
+    right: 12px;
+    top: 17px;
     @extend .small_icons-search;
     &:hover {
       color: $header-action;
@@ -172,13 +172,24 @@
    =================================== */
 
 .dropdown-menu {
-  background: #fcfbf9 none repeat scroll 0 0;
-  border: 1px solid $border-gray;
+  display: none;  
   position: absolute;
   z-index: 20;
   
   .inner {
-    padding: 25px 20px 20px;
+    background: $header-bg none repeat scroll 0 0;
+    border: 1px solid $border-gray;
+    padding: 25px 10px 20px;
+  }
+  
+  .container-fluid {
+    padding: 0 10px;
+  }
+  
+  .two {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
   
   h4 {
@@ -189,25 +200,154 @@
     margin-bottom: 22px;
   }
   
+  li {
+    padding-bottom: 13px;
+  }
+  
+  .tri {
+    border-top: 1px solid $border-gray;
+    border-left: 1px solid $border-gray;
+    background-color: $header-bg;
+    display: block;
+    height: 20px;
+    left: calc(50% - 12px);
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+  }
+  
   a {
     color: $header-main;
+    display: flex;
     font-family: $sofia-m;
     font-size: 14px;
     font-weight: 100;
+  }   
+  
+}
+
+/* ===================================
+   Shopping cart
+   =================================== */
+
+#shoppingCart {
+  border-bottom: 1px solid $border-gray;
+  background: $header-bg none repeat scroll 0 0;
+  display: none;
+  position: relative;
+  width: 100%;
+
+  .row {
+    color: $header-main;
+    border-top: 1px solid $border-gray;
+    display:block;
+    padding: 20px 0;
+    width: 100%;
+    p {
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: $sofia-l;
+    }
+    span {
+      font-size: 14px;
+      font-family: $sofia-m;
+    }
   }
   
-  .close {
-    cursor: pointer;
-    display: block;
-    float: right;
-    margin-bottom: 24px;
-    height: 12px;
-    width: 12px;
-    @include rotate(0.34s);
-    @extend .small_icons-close;
-    &:hover {
-      @extend %rotate;
+  .ccards {
+    font-size: 14px;
+    font-family: $sofia-l;
+    margin: 0 23px 0 7px;
+  }
+  
+  .action {
+    color: #999999;
+    font-size: 14px;
+    font-family: $sofia-m;
+    text-decoration: underline;
+  }
+  
+  table {
+    width: 100%;   
+    tr td:last-child {
+      padding-right: 25px;
+      text-align: right;
     }
+  }
+  
+  .name,
+  .ind {
+    font-size: 15px;
+    font-family: $sofia-m;
+  }
+  .sum {
+    font-size: 19px;
+    font-family: $sofia-m;
+  }
+  
+  .left {
+    float: left;
+    width: 58%;
+  }
+  
+  .right {
+    float: left;
+    width: 41%;
+  }
+  
+  .btn {
+    width: 190px;
+    @extend %btn;
+    @extend .small_icons-small_arrow_white; 
+    @include sprite-background-position($small_icons-sprites, small_arrow_white, 168px, 16px);
+    &:hover,
+    &:active {
+      background-color: $dark-blue;
+    }           
+  }
+  
+  .ccards {
+    display: inline-block;
+    height: 22px;
+    width: 115px;
+    @extend .small_icons-ccards; 
+  }
+  
+  .product .id {
+    font-size: 14px;
+    font-family: $sofia-l;
+  }
+  .product h5 {
+    font-size: 15px;
+    font-family: $sofia-m;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    span {
+      display: block;
+    }
+    a {
+      display: inline-block;
+    }
+  }
+  
+  .tri {
+    border-bottom: 1px solid $border-gray;
+    border-right: 1px solid $border-gray;
+    background-color: $header-bg;
+    display: block;
+    height: 20px;
+    right: 23px;
+    position: absolute;
+    bottom: -10px;
+    width: 20px;
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
   }
   
 }
@@ -287,10 +427,8 @@
   
   .navs {
     bottom: 0;
-    display: block;
     position: absolute;
-    text-align: center;
-    left: calc(50% - 100px);
+    left: calc(50% - 25px);
     z-index: 3;
     li {
       border-radius: 10px;
@@ -439,7 +577,7 @@
    =================================== */
 
 #contact {  
-  background-color: #fcfbf9;
+  background-color: $header-bg;
   padding: 30px 0 42px 0;  
   
   .container-fluid {
@@ -476,6 +614,7 @@
       margin-top: -6px;
     }
     .email {
+      box-shadow: unset;
       border: 1px solid $border-gray;
       display: block;
       font-size: 14px;
@@ -489,14 +628,7 @@
       border: 1px solid #e6535d;
     }
     .btn {
-      background-color: $header-main;
-      border: none;
-      color: white;
-      display: inline-block;
-      font-size: 14px;
-      font-family: $sofia-b;
-      padding: 0 29px 0 15px;
-      height: 43px;
+      @extend %btn;
       @extend .small_icons-small_arrow_white; 
       &:hover,
       &:active {
@@ -636,6 +768,24 @@ footer {
   }
   
 }
+
+/* ===================================
+   Misc
+   =================================== */
+
+.close {
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-bottom: 24px;
+    height: 12px;
+    width: 12px;
+    @include rotate(0.34s);
+    @extend .small_icons-close;
+    &:hover {
+      @extend %rotate;
+    }
+  }
 
 /* ===================================
    End of file

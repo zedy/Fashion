@@ -70,6 +70,18 @@ $sofia-r: 'sofia_proregular';
        -o-transition-timing-function: linear;
           transition-timing-function: linear;
 }  
+
+%btn {
+  background-color: $header-main;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: $sofia-b;
+  padding: 0 29px 0 15px;
+  height: 43px;
+}
   
 %fullscreen {
   left:0;
