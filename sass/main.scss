@@ -168,7 +168,52 @@
 }
 
 /* ===================================
-   Slider of file
+   Dropdown menu
+   =================================== */
+
+.dropdown-menu {
+  background: #fcfbf9 none repeat scroll 0 0;
+  border: 1px solid $border-gray;
+  position: absolute;
+  z-index: 20;
+  
+  .inner {
+    padding: 25px 20px 20px;
+  }
+  
+  h4 {
+    color: $header-main;
+    font-family: $sofia-m;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 22px;
+  }
+  
+  a {
+    color: $header-main;
+    font-family: $sofia-m;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  
+  .close {
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-bottom: 24px;
+    height: 12px;
+    width: 12px;
+    @include rotate(0.34s);
+    @extend .small_icons-close;
+    &:hover {
+      @extend %rotate;
+    }
+  }
+  
+}
+
+/* ===================================
+   Slider
    =================================== */
 
 #slider {
@@ -236,7 +281,7 @@
     top: calc(50% - 25px);
     width: 100%;
     span:hover {
-      background-color: #001d2d;
+      background-color: $dark-blue;
     }
   }
   
@@ -316,8 +361,8 @@
    =================================== */
 
 .notice {
-  border-top: 1px solid #dddad6;
-  border-bottom: 1px solid #dddad6;
+  border-top: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
   height: 69px;
   position: relative;
   text-align: center;
@@ -336,7 +381,7 @@
    =================================== */
 
 .products {
-  border-bottom: 1px solid #dddad6;
+  border-bottom: 1px solid $border-gray;
   position: relative;
   width: 100%;
   
@@ -431,7 +476,7 @@
       margin-top: -6px;
     }
     .email {
-      border: 1px solid #dddad6;
+      border: 1px solid $border-gray;
       display: block;
       font-size: 14px;
       font-family: $sofia-l;      
@@ -439,6 +484,9 @@
       margin: 11px 0 15px 0;
       padding-left: 10px;
       width: 288px;
+    }
+    .invalid {
+      border: 1px solid #e6535d;
     }
     .btn {
       background-color: $header-main;
@@ -449,17 +497,21 @@
       font-family: $sofia-b;
       padding: 0 29px 0 15px;
       height: 43px;
-      @extend .small_icons-small_arrow_white;      
+      @extend .small_icons-small_arrow_white; 
+      &:hover,
+      &:active {
+        background-color: $dark-blue;
+      }           
     }
-    .btn:nth-child(2) {
+    .w {
       margin-right: 12px;
       @include sprite-background-position($small_icons-sprites, small_arrow_white, 79px, 16px);
     }
-    .btn:nth-child(3) {
+    .m {
       margin-right: 12px;
       @include sprite-background-position($small_icons-sprites, small_arrow_white, 58px, 16px);
     }
-    .btn:nth-child(4) {
+    .b {
       @include sprite-background-position($small_icons-sprites, small_arrow_white, 66px, 16px);
     }
   }

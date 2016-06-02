@@ -20,6 +20,7 @@
         <!-- Header section -->
         <header id="navigation">
             <div class="container-fluid">
+                
                 <div class="main first-level col-xs-12">                    
                     <div class="lang">
                         <a href="#">NL</a>
@@ -38,7 +39,9 @@
                         <a href="#" class="second">9 may 2014</a>
                     </div>                      
                 </div><!-- /.main -->
+                
                 <div class="clearfix"></div>
+                
                 <div class="menu second-level col-xs-12">
                     <ul class="nav-menu">
                         <li class="home">&nbsp;</li>
@@ -50,6 +53,50 @@
                         <span>search</span>                    
                     </div>
                 </div><!-- /.menu -->
+                <div class="clearfix"></div>
+                
+                <!-- Dropdown menu -->
+                <div class="dropdown-menu">
+                  <div class="container-fluid">
+                    <div class="inner">
+                        <div class="col-xs-2">
+                            <h4>features</h4>
+                            <ul class="sub-menu">
+                                <li><a href="#">new arrivals</a></li>
+                                <li><a href="#">best sellers</a></li>
+                                <li><a href="#">sales</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            <h4>categories</h4>
+                            <ul class="sub-menu">
+                                <li><a href="#">all clothgin</a></li>
+                                <li><a href="#">accessories</a></li>
+                                <li><a href="#">basics</a></li>
+                                <li><a href="#">dresses</a></li>
+                                <li><a href="#">jackets</a></li>
+                                <li><a href="#">jeans</a></li>
+                                <li><a href="#">pants</a></li>
+                                <li><a href="#">shirts</a></li>
+                                <li><a href="#">skirts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-2">
+                            <h4>lookbooks</h4>
+                            <ul class="sub-menu">
+                                <li><a href="#">spring 2016</a></li>
+                                <li><a href="#">summer 2015</a></li>
+                            </ul>
+                        </div>
+                        <div class="image col-xs-4">
+                            <span id="close" class="close">&nbsp;</span>
+                            <img class="img-resize" src="images/products/sale-min.jpg" />
+                        </div>
+                        <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div><!-- /.dropdown menu -->
+                
                 <div id="searchBlock" class="hide">
                     <input class="type-btn" placeholder="Search ..." type="text" value="" />
                     <input class="search-btn btn" type="submit" value="search" />
@@ -170,11 +217,13 @@
                 </ul>                
                 <div class="newsletter col-xs-4">
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras commodo tempus eros.</span>
-                    <form action="/" enctype="text/plain">                   
+                    <form id="contactForm">                   
                         <input  class="email" type="email" name="email" placeholder="Your e-mail address" />
-                        <button class="btn" name="Send" value="Send">WOMEN</button> 
-                        <button class="btn" name="Send" value="Send">MEN</button> 
-                        <button class="btn" name="Send" value="Send">BOTH</button>                   
+                        <input  class="trap" type="hidden" />
+                        <div class="response"></div>
+                        <button class="w btn" name="Send" value="Send">WOMEN</button> 
+                        <button class="m btn" name="Send" value="Send">MEN</button> 
+                        <button class="b btn" name="Send" value="Send">BOTH</button>                   
                     </form>
                 </div>   
                 <div class="info col-xs-4">

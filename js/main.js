@@ -18,6 +18,7 @@
     
     main_slider_controlls();
     main_box_resizing();
+    $('#contactForm').find('.btn').on('click', main_contact_form_operations);
     
   });
   
@@ -26,7 +27,11 @@
    * Call all the elements that need to be responsive
    */
   $(window).resize(function() {
+    clearTimeout(resize);
+      resize = setTimeout(function() {
+        //magic goes here
 
+      }, 300);
   });
   
   /**
@@ -90,6 +95,70 @@
     $('#boxes > div').height(width);
   }
   
+  /**
+   * The validation and submition of the contact
+   * form.
+   */
+  function main_contact_form_operations(e) {
+    
+    e.preventDefault();
+    
+    var $email = $('#contactForm').find('.email');
+    var trap = $('#contactForm').find('.trap').val();
+    
+    // regex for testing email
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+    // Honeypot
+    // mhm, honey, who can resist? certainly not a bot.
+    if (trap != '') {
+      return false;
+    }
+
+    // validation of the email
+    if (!$email.val()) {
+      $email.addClass('invalid').removeClass('valid');
+    } else if (regex.test($email.val()) && $email.val()) {
+      $email.addClass('valid').removeClass('invalid');
+    }
+
+    // fianlly we call the function wich whill send the email if validation is TRUE.
+    if ($email.hasClass('valid')) {
+      var data = {};
+      data.email = $email.val();
+      main_send_email(data);
+    } else {
+      return false;
+    }   
+
+    return false;
+    
+  }
+  
+  /**
+   * The function that send the contact form parameters to the php
+   * script, which will send a nice little thank you to the new 
+   * subsriber :) 
+   * 
+   * @see send_email.php
+   */
+  function main_send_email(emailData) {
+
+    if(emailData) {
+        jQuery.ajax({
+            url: "send_email.php",
+            data:'email='+
+            emailData.email,
+            type: "POST",
+            success:function(data){
+                $('#contactForm .response').html(data); 
+            },
+            error:function(data){
+              $('#contactForm .response').html(data);      
+            }
+        });
+      }
+  }
   
   // End of file
 })( jQuery, window, document );

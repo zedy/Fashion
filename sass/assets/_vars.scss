@@ -40,7 +40,8 @@
 $header-bg: #fcfbf9;
 $header-main: #002d47;
 $header-action: #000;
-
+$border-gray: #dddad6; 
+$dark-blue: #001d2d;
 
 /* ===================================
    Misc
@@ -97,4 +98,24 @@ $sofia-r: 'sofia_proregular';
   position: relative;
   width: 34px;
   z-index: 9999;
+}
+
+@mixin rotate($duration) {
+  -webkit-transition-duration: $duration;
+     -moz-transition-duration: $duration;
+       -o-transition-duration: $duration;
+          transition-duration: $duration;
+
+  -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+                   transition-property: transform;
+}
+
+%rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
