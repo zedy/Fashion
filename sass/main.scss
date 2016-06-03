@@ -13,6 +13,7 @@
 
 #mainNavbar {
   background-color: $header-bg;
+  z-index: 3;
 }
 
 #navigation {
@@ -220,6 +221,7 @@
     position: absolute;
     top: -10px;
     width: 20px;
+    z-index: 2;
     -moz-transform:rotate(45deg);
     transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
@@ -498,7 +500,7 @@
   background-color: $header-bg;
   position: absolute;
   width: 100%;
-  z-index: 11;
+  z-index: 2;
   
   .top-block {
     border-top:1px solid $border-gray;
@@ -1023,12 +1025,16 @@ footer {
     }
   }
 
+.z5 {
+  z-index: 5 !important;
+}
+
 /* ===================================
    Push animations
    =================================== */
   
 #searchBlock.push-in {
-  transform: translateY(-170px);
+  transform: translateY(-169px);
   transition: transform 0.5s ease 0s;
 }
 

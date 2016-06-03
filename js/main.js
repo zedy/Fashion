@@ -11,6 +11,27 @@
   var $prev = $('#slider').find('.left');
   var $next = $('#slider').find('.right');  
   var $email = $('#contactForm').find('.email');
+  // check to see UA
+  var isMob = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
+
+  
+  /**
+   * Checks the see the device and resolution so that
+   * we can load images accodring to the device.
+   * 
+   * No need to load 1440px images for an iPhone.
+   */
+  $(function() {
+    
+    // defauult is the standard image [1440px]
+    // @TODO insert a check for resolution so we can differentiate between Tablet and phone.
+    if(isMob) {
+      $("#slider .slide").each(function() {
+        $('img', $(this)).attr("src", $('img', $(this)).attr("src").replace("lg-min", "sm-min"));
+      });
+    }
+  });
+  
   
   /**
    * All function calls are placed on top for ease of access
@@ -53,7 +74,13 @@
     $('#searchBlock').removeClass('push-in').addClass('push-out');
     $('.mid-section').removeClass('not-push').addClass('has-push-mid');
     $('body').addClass('push').addClass('mid');
-    $('#cartShadow').fadeIn(150);
+    $('#cartShadow').fadeIn(550);
+    setTimeout(
+      function() 
+      {
+        $('#searchBlock').addClass('z5');
+        main_active_shadow();
+      }, 400);
     
   }
     
@@ -154,8 +181,13 @@
     $('.mid-section, #mainNavbar').removeClass('has-push-top').addClass('not-push');
     $('body').removeClass('push');
     $('#cartShadow').fadeOut(150);
-    
+    $('body').removeClass('top');
   }
+  
+  /**
+   * Close/hide the searchbar when the user clicks on
+   * the shadow.
+   */
   
   /**
    * When clcking on the push shadow the animations
@@ -168,7 +200,12 @@
       if ($('body').hasClass('top')) {
         main_close_shopping_menu();
       } else if ($('body').hasClass('mid')) {
-        
+        $('#searchBlock').addClass('push-in').removeClass('push-out');
+        $('.mid-section').removeClass('has-push-mid').addClass('not-push');
+        $('body').removeClass('push').removeClass('mid');
+        $('#cartShadow').fadeOut(150);
+        $('#searchBlock').removeClass('z5');
+        $('body').removeClass('mid');
       }
       
     });
