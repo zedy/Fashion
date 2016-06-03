@@ -82,6 +82,28 @@ $sofia-r: 'sofia_proregular';
   padding: 0 29px 0 15px;
   height: 43px;
 }
+
+%select {
+  border: 1px solid $border-gray;
+  border-radius: 0px;
+  background: #fff;
+  color: $header-main;
+  display: block;
+  line-height: normal;
+  font-family: $sofia-l;
+  font-size: 15px;
+  line-height: inherit;
+  height: 40px;
+  margin: 0;
+  
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0 15px;
+  transition: border-color 0.2s;
+}
+
   
 %fullscreen {
   left:0;

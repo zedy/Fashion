@@ -234,15 +234,16 @@
    =================================== */
 
 #shoppingCart {
-  border-bottom: 1px solid $border-gray;
+  //border-bottom: 1px solid $border-gray;
   background: $header-bg none repeat scroll 0 0;
-  display: none;
+  //display: none;
   position: relative;
+  padding-top: 20px;
   width: 100%;
 
   .row {
     color: $header-main;
-    border-top: 1px solid $border-gray;
+    border-bottom: 1px solid $border-gray;
     display:block;
     padding: 20px 0;
     width: 100%;
@@ -268,6 +269,9 @@
     font-size: 14px;
     font-family: $sofia-m;
     text-decoration: underline;
+    &:hover {
+      color: #666666;
+    }
   }
   
   table {
@@ -278,9 +282,10 @@
     }
   }
   
+  .sym,
   .name,
   .ind {
-    font-size: 15px;
+    font-size: 15px !important;
     font-family: $sofia-m;
   }
   .sum {
@@ -335,6 +340,10 @@
     }
   }
   
+  .close {
+    margin-right: 12px;
+  }
+  
   .tri {
     border-bottom: 1px solid $border-gray;
     border-right: 1px solid $border-gray;
@@ -348,6 +357,59 @@
     -moz-transform:rotate(45deg);
     transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
+  }
+  
+  .first .right {
+    color: $header-main;
+    .wrapper > div {
+      float: left;
+      margin-right: 60px;
+    }
+  }
+  
+  .quantity {    
+    display: inline-block;
+    position: relative;    
+    select {
+      @extend %select;
+      option {
+        color: $border-gray;
+        padding: 2px 0 2px 18px;/*
+        &:checked {
+          color: $header-main;
+          font-size: 14px;
+          font-family: $sofia-m;
+        }*/
+      }
+    }
+  }
+select:not(:checked) {
+   color: gray;
+}
+  .outter-c {
+    border: 1px solid $border-gray;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 11px;
+    height: 40px;
+    width: 40px;
+  }
+  .inner-c {
+    background: #000;
+    border-radius: 10px;
+    content: " ";
+  }
+  
+  .sym {
+    display: flex;
+    padding-top: 10px;
+  }
+  
+  .lbl {
+    display: flex;
+    font-size: 15px;
+    font-family: $sofia-m;
+    padding-bottom: 15px;
   }
   
 }
