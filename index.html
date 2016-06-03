@@ -18,102 +18,103 @@
     <body> 
         
         <!-- Header section -->
-        <header id="navigation">
-            
+        <header id="navigation">            
             <!-- dropdown shopping cart -->
-            <div id="shoppingCart" class="shopping-cart">
-                    <div class="container-fluid">
-                        <div class="inner">
-                            <span id="closeCart" class="close">&nbsp;</span>
-                            <div class="first row">
-                                <div class="left">
-                                    <div class="product">
-                                        <h5>Product</h5>
-                                        <div class="clearfix"></div>
-                                        <div class="image col-xs-1">
-                                            <img class="img-resize" src="images/products/shirt.png" />
-                                        </div>
-                                        <div class="details col-xs-3">
-                                            <span class="name">Black shirt</span>
-                                            <span class="id">Product nr.: 382832</span>
-                                            <a class="action" href="#">edit</a>
-                                            <a class="action" href="#">remove</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="right">
-                                    <div class="wrapper">
-                                        <div class="quantity">
-                                            <!-- cheating, to get the desired dropdown -->
-                                            <span class="lbl">Quantity</span>
-                                            <input id="quantity" class="select closed" type="text" value="1" />
-                                            <ul id="pickerBox" class="picker">
-                                                <li>1</li>
-                                                <li>2</li>
-                                                <li>3</li>
-                                                <li>4</li>
-                                            </ul>
-                                        </div>
-                                        <div class="color">
-                                            <span class="lbl">Color</span>
-                                            <div class="outter-c">
-                                                <div class="inner-c">&nbsp;</div>
-                                            </div>
-                                        </div>
-                                        <div class="size">
-                                            <span class="lbl">Size</span>
-                                            <div class="outter-c">m</div>
-                                        </div>
-                                        <div class="price">
-                                            <span class="lbl">Price</span>
-                                            <span class="sym">100 $</span>
-                                        </div>
-                                    </div>
+            <div id="shoppingCart" class="shopping-cart push-out">
+                <div class="container-fluid">
+                    <div class="inner">
+                        <span id="closeCart" class="close">&nbsp;</span>
+                        <div class="first row">
+                            <div class="left">
+                                <div class="product">
+                                    <h5>Product</h5>
                                     <div class="clearfix"></div>
+                                    <div class="image col-xs-1">
+                                        <img class="img-resize" src="images/products/shirt.png" />
+                                    </div>
+                                    <div class="details col-xs-3">
+                                        <span class="name">Black shirt</span>
+                                        <span class="id">Product nr.: 382832</span>
+                                        <a class="action" href="#">edit</a>
+                                        <a class="action" href="#">remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="wrapper">
+                                    <div class="quantity">
+                                        <!-- cheating, to get the desired dropdown -->
+                                        <span class="lbl">Quantity</span>
+                                        <input id="quantity" class="select closed" type="text" value="1" />
+                                        <ul id="pickerBox" class="picker">
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                        </ul>
+                                    </div>
+                                    <div class="color">
+                                        <span class="lbl">Color</span>
+                                        <div class="outter-c">
+                                            <div class="inner-c">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                    <div class="size">
+                                        <span class="lbl">Size</span>
+                                        <div class="outter-c">m</div>
+                                    </div>
+                                    <div class="price">
+                                        <span class="lbl">Price</span>
+                                        <span class="sym">100 $</span>
+                                    </div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="second row">
-                                <div class="left">
-                                    <p>have a voucher code? <br/><a class="action" href="#">fill in your code</a></p>
-                                </div>
-                                <div class="right">
-                                    <table>
-                                        <tbody>
-                                            <tr>
-                                                <td class="ind">Subtotal</td>
-                                                <td>100 $</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="ind">Indication dilvery cost</td>
-                                                <td>10 $</td>
-                                            </tr>
-                                            <tr class="sum">
-                                                <td>Order total</td>
-                                                <td>110 $</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="third row">
-                                <div class="left">
-                                    <p>Order shipped withing <span>1 business day<br/>30-day return guarantee</span></p>
-                                </div>
-                                <div class="right">
-                                    <span>We accept:</span>
-                                    <span class="ccards">&nbsp;</span>
-                                    <button class="w btn" name="Send" value="Send">SECURE CHECKOUT</button>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>                            
+                            <div class="clearfix"></div>
                         </div>
-                        <span id="triCart" class="tri">&nbsp;</span>
-                    </div>                     
-                </div><!-- /.shopping-cart -->
+                        <div class="second row">
+                            <div class="left">
+                                <p>have a voucher code? <br/><a class="action" href="#">fill in your code</a></p>
+                            </div>
+                            <div class="right">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="ind">Subtotal</td>
+                                            <td>100 $</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ind">Indication dilvery cost</td>
+                                            <td>10 $</td>
+                                        </tr>
+                                        <tr class="sum">
+                                            <td>Order total</td>
+                                            <td>110 $</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="third row">
+                            <div class="left">
+                                <p>Order shipped withing <span>1 business day<br/>30-day return guarantee</span></p>
+                            </div>
+                            <div class="right">
+                                <span>We accept:</span>
+                                <span class="ccards">&nbsp;</span>
+                                <button class="w btn" name="Send" value="Send">SECURE CHECKOUT</button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>                            
+                    </div>
+                    <span id="triCart" class="tri">&nbsp;</span>
+                </div>                     
+            </div><!-- /.shopping-cart -->
             
-            <div class="container-fluid">                                               
+            <div id="cartShadow"></div>
+            
+            <div id="mainNavbar" class="container-fluid not-push">                                               
                 <!-- Top level menu -->
                 <div class="main first-level col-xs-12">                    
                     <div class="lang">
@@ -143,7 +144,7 @@
                         <li>men</li>
                         <li>experience</li>
                     </ul>
-                    <div class="search">
+                    <div id="search" class="search">
                         <span>search</span>                    
                     </div>
                 </div><!-- /.menu -->
@@ -194,23 +195,32 @@
             </div><!-- /.container -->
             
             <!-- search block -->
-            <div id="searchBlock" class="search-block">
-                <form>
-                    <input class="type-btn" placeholder="Search ..." type="text" value="" />
-                    <input class="search-btn btn" type="submit" value="search" />
-                    <div class="autocomplete-box">
+            <div id="searchBlock" class="search-block push-in"> 
+                <div class="top-block">                    
+                    <div class="container-fluid">
+                        <span id="triCart" class="tri">&nbsp;</span>
+                        <form>
+                            <input class="type-btn" placeholder="Search ..." type="text" value="" />
+                            <input class="clear-btn btn" type="reset" />
+                            <input class="search-btn btn" type="submit" value="SEARCH" />                        
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom-block">
+                    <div class="autocomplete-box container-fluid">
                         <ul class="suggestions-list">
                             <li>black shirt</li>
                             <li>black blazer</li>
                             <li>black tie</li>
                         </ul>
                     </div>
-                </form>
+                </div>
             </div><!-- /#searchBlock -->
         </header>
         
-        <!-- Mid section | slider, box elements -->
-        <section class="mid-section">
+        <!-- Mid section -->
+        <section class="mid-section not-push">
+            <!-- Slider -->
             <div id="slider" class="slider">
                 <div class="slides">
                     <div class="active first slide" data-id="1">
@@ -302,39 +312,38 @@
                 <div class="clearfix"></div>
             </div><!-- /.products -->
             
-        </section>
-        
-        <!-- Contact section -->
-        <section id="contact">
-            <div class="container-fluid">
-                <ul class="sub-menu col-xs-4">
-                    <li><a href="#">help</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">privacy policy</a></li>
-                    <li><a href="#">terms &amp; conditions</a></li>
-                </ul>                
-                <div class="newsletter col-xs-4">
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras commodo tempus eros.</span>
-                    <form id="contactForm">                   
-                        <input  class="email" type="email" name="email" placeholder="Your e-mail address" />
-                        <input  class="trap" type="hidden" />
-                        <div class="response"></div>
-                        <button class="w btn" name="Send" value="Send">WOMEN</button> 
-                        <button class="m btn" name="Send" value="Send">MEN</button> 
-                        <button class="b btn" name="Send" value="Send">BOTH</button>                   
-                    </form>
-                </div>   
-                <div class="info col-xs-4">
-                    <div>
-                        <span class="pin">&nbsp;</span>
-                        <p>33G King's rd, London</p>
-                        <p>+44 20 777 874 9</p>
-                        <a href="#">MORE INFORMATION</a>
+            <!-- Contact section -->
+            <div id="contact">
+                <div class="container-fluid">
+                    <ul class="sub-menu col-xs-4">
+                        <li><a href="#">help</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">terms &amp; conditions</a></li>
+                    </ul>                
+                    <div class="newsletter col-xs-4">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Cras commodo tempus eros.</span>
+                        <form id="contactForm">                   
+                            <input  class="email" type="email" name="email" placeholder="Your e-mail address" />
+                            <input  class="trap" type="hidden" />
+                            <div class="response"></div>
+                            <button class="w btn" name="Send" value="Send">WOMEN</button> 
+                            <button class="m btn" name="Send" value="Send">MEN</button> 
+                            <button class="b btn" name="Send" value="Send">BOTH</button>                   
+                        </form>
+                    </div>   
+                    <div class="info col-xs-4">
+                        <div>
+                            <span class="pin">&nbsp;</span>
+                            <p>33G King's rd, London</p>
+                            <p>+44 20 777 874 9</p>
+                            <a href="#">MORE INFORMATION</a>
+                        </div>
                     </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>             
-        </section><!-- /#contact -->
+                    <div class="clearfix"></div>
+                </div>             
+            </div><!-- /#contact -->
+        </section>               
         
         <!-- Footer section -->
         <footer>                        

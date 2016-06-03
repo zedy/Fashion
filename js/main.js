@@ -23,10 +23,11 @@
     $('#contactForm').find('.btn').on('click', main_contact_form_operations);
     $email.on('keypress', main_contact_form_check);
     $('#closeDDM').off().on('click', main_close_dropdown_menu);
-    $('#navigation li').off().on('click', main_open_dropdown_menu);
+    $('#navigation .nav-menu li').off().on('click', main_open_dropdown_menu);
     $('#cart').off().on('click', main_open_shopping_menu);
     $('#closeCart').off().on('click', main_close_shopping_menu);
     $('#quantity').off().on('click', main_show_picker);
+    $('#search').off().on('click', main_show_searchbar);    
     main_insert_into_qunatity();
     
   });
@@ -43,6 +44,19 @@
       }, 300);
   });
   
+  /**
+   * Whent licking on the search icon
+   * the searchbar is displayed.
+   */
+  function main_show_searchbar(e) {
+    
+    $('#searchBlock').removeClass('push-in').addClass('push-out');
+    $('.mid-section').removeClass('not-push').addClass('has-push-mid');
+    $('body').addClass('push').addClass('mid');
+    $('#cartShadow').fadeIn(150);
+    
+  }
+    
   /**
    * When clicking on the custom 'select' field
    * we need to show the options.
@@ -92,7 +106,11 @@
    */
   function main_open_shopping_menu() {
     
-    $('#shoppingCart').slideDown(150);
+    $('#shoppingCart').addClass('push-in');
+    $('.mid-section, #mainNavbar').removeClass('not-push').addClass('has-push-top');
+    $('body').addClass('push').addClass('top');
+    $('#cartShadow').fadeIn(150);
+    main_active_shadow();
     
   }
   
@@ -132,7 +150,28 @@
    */
   function main_close_shopping_menu() {
     
-    $('#shoppingCart').slideUp(150).toggleClass('closed');
+    $('#shoppingCart').removeClass('push-in');
+    $('.mid-section, #mainNavbar').removeClass('has-push-top').addClass('not-push');
+    $('body').removeClass('push');
+    $('#cartShadow').fadeOut(150);
+    
+  }
+  
+  /**
+   * When clcking on the push shadow the animations
+   * revert to their starting positions
+   */
+  function main_active_shadow() {
+    
+    $('#cartShadow').off().on('click', function() {
+      
+      if ($('body').hasClass('top')) {
+        main_close_shopping_menu();
+      } else if ($('body').hasClass('mid')) {
+        
+      }
+      
+    });
     
   }
   

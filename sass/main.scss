@@ -11,6 +11,10 @@
    Navigation rules
    =================================== */
 
+#mainNavbar {
+  background-color: $header-bg;
+}
+
 #navigation {
   background-color: $header-bg;
   //height: 110px;
@@ -239,9 +243,11 @@
   border-bottom: 1px solid $border-gray;
   background: $header-bg none repeat scroll 0 0;
   //display: none;
-  position: relative;
+  position: absolute;
   padding-top: 23px;
+  transition: transform 0.5s ease 0s;
   width: 100%;
+  z-index: 6;
   
   .inner {
     padding: 0 10px;
@@ -485,12 +491,100 @@
 }
 
 /* ===================================
+   Search block
+   =================================== */
+
+#searchBlock {
+  background-color: $header-bg;
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  
+  .top-block {
+    border-top:1px solid $border-gray;
+    border-bottom:1px solid $border-gray;
+    height: 50px;
+    .btn {
+      position: absolute;
+      top: 0;
+    }
+    .clear-btn {
+      background-color: rgba(0, 0, 0, 0);
+      border: medium none;
+      height: 48px;
+      right: 161px;
+      text-indent: -9999px;
+      width: 72px;
+      @extend .small_icons-close2; 
+      @include sprite-background-position($small_icons-sprites, close2, 36, 18px);
+    }
+    .search-btn {
+      @extend %btn;
+      height: 48px;
+      right: 49px;
+      width: 112px;
+      @extend .small_icons-small_arrow_white; 
+      @include sprite-background-position($small_icons-sprites, small_arrow_white, 91px, 18px);
+      &:hover,
+      &:active {
+        background-color: $dark-blue;
+      } 
+    }
+  }
+  
+  .bottom-block {
+    border-top: none;
+    border-bottom:1px solid $border-gray;
+    padding: 22px 0 7px;
+  }
+  
+  .suggestions-list > li {
+    cursor: pointer;
+    color: #58799d;
+    font-size: 15px;
+    font-family: $sofia-m;      
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .suggestions-list > li:first-child {
+    color: $dark-blue;
+  }
+  
+  .tri {
+    border-top: 1px solid $border-gray;
+    border-left: 1px solid $border-gray;
+    background-color: $header-bg;
+    display: block;
+    height: 20px;
+    right: 20px;
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+  }
+  
+  .type-btn {
+    background-color: $header-bg;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    height: 48px;
+    text-align: center;
+    width: 362px;
+  }
+  
+}
+
+/* ===================================
    Slider
    =================================== */
 
 #slider {
   width: 100%;
   overflow: hidden;
+  position: relative;
   
   .slides {
     width: 100%;
@@ -904,6 +998,16 @@ footer {
 /* ===================================
    Misc
    =================================== */
+#cartShadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0,0,0, 0.3); 
+  z-index: 5;
+  display: none; 
+}
 
 .close {
     cursor: pointer;
@@ -918,6 +1022,50 @@ footer {
       @extend %rotate;
     }
   }
+
+/* ===================================
+   Push animations
+   =================================== */
+  
+#searchBlock.push-in {
+  transform: translateY(-170px);
+  transition: transform 0.5s ease 0s;
+}
+
+#searchBlock.push-out {
+  transform: translateY(0);
+  transition: transform 0.5s ease 0s;
+} 
+  
+#mainNavbar {
+  transform: translateY(0);
+}
+
+#mainNavbar.has-push-top,
+.mid-section.has-push-top {
+  transform: translateY(385px);
+  transition: transform 0.5s ease 0s;
+}
+
+.mid-section.has-push-mid {
+  transform: translateY(170px);
+  transition: transform 0.5s ease 0s;
+}
+
+
+#mainNavbar.not-push,
+.mid-section.not-push {
+  transform: translateY(0);
+  transition: transform 0.5s ease 0s;
+}
+
+.shopping-cart.push-out {
+  transform: translateY(-385px);
+}
+
+.shopping-cart.push-in {
+  transform: translateY(0px);
+}
 
 /* ===================================
    End of file

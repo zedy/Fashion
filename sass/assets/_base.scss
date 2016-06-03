@@ -23,6 +23,9 @@
 html {
   line-height: 1;
 }
+body.push {
+  overflow: hidden;
+}
 .hide {
   display: none;
 }
