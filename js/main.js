@@ -22,10 +22,12 @@
     main_box_resizing();
     $('#contactForm').find('.btn').on('click', main_contact_form_operations);
     $email.on('keypress', main_contact_form_check);
-    $('#closeDDM').on('click', main_close_dropdown_menu);
-    $('#navigation li').on('click', main_open_dropdown_menu);
-    $('#cart').on('click', main_open_shopping_menu);
-    $('#closeCart').on('click', main_close_shopping_menu);
+    $('#closeDDM').off().on('click', main_close_dropdown_menu);
+    $('#navigation li').off().on('click', main_open_dropdown_menu);
+    $('#cart').off().on('click', main_open_shopping_menu);
+    $('#closeCart').off().on('click', main_close_shopping_menu);
+    $('#quantity').off().on('click', main_show_picker);
+    main_insert_into_qunatity();
     
   });
   
@@ -41,6 +43,48 @@
       }, 300);
   });
   
+  /**
+   * When clicking on the custom 'select' field
+   * we need to show the options.
+   */
+  function main_show_picker(e) {
+    
+    e.stopPropagation();
+    // show the options
+    $('#pickerBox').slideDown(100);
+    if ($('#quantity').hasClass('closed')) {
+      $('#quantity').removeClass('closed').addClass('opened');
+    }
+    
+    $(document.body).off().on('click', function(ev){
+      ev.stopPropagation();
+      
+      if (ev.target.parentElement.id !== "pickerBox") {
+        $('#pickerBox').slideUp(100);
+        $('#quantity').addClass('closed').removeClass('opened');
+      }
+
+    });
+    
+  }
+  
+  /**
+   * When the user clicks on the options list
+   * the value is inserted into the select element
+   * and the picker is closed
+   */
+  function main_insert_into_qunatity() {
+    
+    $('#pickerBox li').off().on('click', function(e){
+        var opt = parseInt(e.currentTarget.innerHTML);        
+        $('#quantity').val(opt);
+        $('#quantity').addClass('closed').removeClass('opened');
+        $('#pickerBox').slideUp(100);
+    });
+       
+  }
+
+ 
   /**
    * When the users clics on the `weight` symbol
    * for the shopping cart, the detailed menu slides up
@@ -61,7 +105,8 @@
    * 
    */
   function main_open_dropdown_menu(e) {    
-    console.log(e);
+
+    e.stopPropagation();
     // there is not need for this since if this was a production
     // website the page would be redirected to home.
     if (e.target.className == 'home') {

@@ -119,7 +119,8 @@
     @extend %flexbox;
   }
   
-  .nav-menu {    
+  .nav-menu {  
+    padding-left: 7px;  
     li {
       border-bottom: 2px solid $header-bg;      
       cursor: pointer;
@@ -134,6 +135,7 @@
     .home {
       width: 22px;
       @extend .small_icons-home;
+      @include sprite-background-position($small_icons-sprites, home, 0, 2px);
     }
     li:not(.home) {
       margin: 0 17px;
@@ -234,16 +236,19 @@
    =================================== */
 
 #shoppingCart {
-  //border-bottom: 1px solid $border-gray;
+  border-bottom: 1px solid $border-gray;
   background: $header-bg none repeat scroll 0 0;
   //display: none;
   position: relative;
-  padding-top: 20px;
+  padding-top: 23px;
   width: 100%;
-
+  
+  .inner {
+    padding: 0 10px;
+  }
+  
   .row {
-    color: $header-main;
-    border-bottom: 1px solid $border-gray;
+    color: $header-main;    
     display:block;
     padding: 20px 0;
     width: 100%;
@@ -258,17 +263,23 @@
     }
   }
   
+  .row.first,
+  .row.second {
+    border-bottom: 1px solid $border-gray;
+  }
+  
   .ccards {
     font-size: 14px;
     font-family: $sofia-l;
-    margin: 0 23px 0 7px;
+    margin: 0 20px 0 3px;
   }
   
   .action {
     color: #999999;
     font-size: 14px;
     font-family: $sofia-m;
-    text-decoration: underline;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 3px;
     &:hover {
       color: #666666;
     }
@@ -279,6 +290,12 @@
     tr td:last-child {
       padding-right: 25px;
       text-align: right;
+    }
+    tr:first-child td {
+      padding-bottom: 9px;
+    }
+    tr:nth-child(2) td {
+      padding-bottom: 17px;
     }
   }
   
@@ -295,7 +312,7 @@
   
   .left {
     float: left;
-    width: 58%;
+    width: 59%;
   }
   
   .right {
@@ -304,10 +321,11 @@
   }
   
   .btn {
+    height: 50px;
     width: 190px;
     @extend %btn;
     @extend .small_icons-small_arrow_white; 
-    @include sprite-background-position($small_icons-sprites, small_arrow_white, 168px, 16px);
+    @include sprite-background-position($small_icons-sprites, small_arrow_white, 168px, 19px);
     &:hover,
     &:active {
       background-color: $dark-blue;
@@ -328,20 +346,36 @@
   .product h5 {
     font-size: 15px;
     font-family: $sofia-m;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+  }
+  
+  .product .image {
+    padding-right: 0;
+    img {
+      width: auto !important;
+    }
   }
   
   .details {
+    padding-left: 0;
+    margin-left: 35px;
     span {
       display: block;
+      margin-bottom: 5px;
     }
     a {
       display: inline-block;
     }
+    .id {
+      margin-bottom: 8px;
+    }
+    a:last-child {
+      margin-left: 22px;
+    }
   }
   
   .close {
-    margin-right: 12px;
+    margin: 0;
   }
   
   .tri {
@@ -363,29 +397,65 @@
     color: $header-main;
     .wrapper > div {
       float: left;
-      margin-right: 60px;
+    }
+    .quantity {
+      margin-right: 63px;
+    }
+    .color,
+    .quantity {
+      margin-right: 63px;
+    }
+    .size {
+      margin-right: 72px;
     }
   }
   
   .quantity {    
     display: inline-block;
     position: relative;    
-    select {
-      @extend %select;
-      option {
-        color: $border-gray;
-        padding: 2px 0 2px 18px;/*
-        &:checked {
-          color: $header-main;
-          font-size: 14px;
-          font-family: $sofia-m;
-        }*/
-      }
+  }
+  
+  .select {
+    cursor: pointer;
+    box-shadow: unset;
+    border: 1px solid $border-gray;
+    display: block;
+    font-size: 15px;
+    font-family: $sofia-l;      
+    height: 41px;
+    margin: 0;
+    padding-left: 15px;
+    width: 65px;    
+  }
+  .select.closed {
+    @extend .small_icons-arrow_down;
+    @include sprite-background-position($small_icons-sprites, arrow_down, 40px, 18px);
+  }
+  .select.opened {
+    @extend .small_icons-close2;
+    @include sprite-background-position($small_icons-sprites, close2, 40px, 16px);
+  }
+  
+  .picker {
+    background-color: #fff;
+    border: 1px solid $border-gray;
+    display: none;
+    margin-top: -1px;
+    li {
+      color: $header-main;
+      font-size: 14px;
+      font-family: $sofia-l; 
+      padding: 12px 0 12px 17px;
+      &:hover {
+        background-color: #eeebe7;
+        cursor: pointer;
+      }    
+    }
+    li:active {
+      font-family: $sofia-m; 
     }
   }
-select:not(:checked) {
-   color: gray;
-}
+  
   .outter-c {
     border: 1px solid $border-gray;
     border-radius: 20px;

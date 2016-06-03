@@ -19,10 +19,9 @@
         
         <!-- Header section -->
         <header id="navigation">
-            <div class="container-fluid">
-                
-                <!-- dropdown shopping cart -->
-                <div id="shoppingCart" class="shopping-cart">
+            
+            <!-- dropdown shopping cart -->
+            <div id="shoppingCart" class="shopping-cart">
                     <div class="container-fluid">
                         <div class="inner">
                             <span id="closeCart" class="close">&nbsp;</span>
@@ -46,13 +45,14 @@
                                     <div class="wrapper">
                                         <div class="quantity">
                                             <!-- cheating, to get the desired dropdown -->
-                                            <label class="lbl" for="q">Quantity</label>
-                                            <select id="q">
-                                                <option>1</option>
-                                                <option selected>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                            </select>
+                                            <span class="lbl">Quantity</span>
+                                            <input id="quantity" class="select closed" type="text" value="1" />
+                                            <ul id="pickerBox" class="picker">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                            </ul>
                                         </div>
                                         <div class="color">
                                             <span class="lbl">Color</span>
@@ -99,7 +99,7 @@
                             </div>
                             <div class="third row">
                                 <div class="left">
-                                    <p>order shipping withing <span>1 business day<br/>30-day return guarantee</span></p>
+                                    <p>Order shipped withing <span>1 business day<br/>30-day return guarantee</span></p>
                                 </div>
                                 <div class="right">
                                     <span>We accept:</span>
@@ -109,10 +109,11 @@
                                 <div class="clearfix"></div>
                             </div>                            
                         </div>
-                    </div>
-                     <span id="triCart" class="tri">&nbsp;</span>
+                        <span id="triCart" class="tri">&nbsp;</span>
+                    </div>                     
                 </div><!-- /.shopping-cart -->
-                
+            
+            <div class="container-fluid">                                               
                 <!-- Top level menu -->
                 <div class="main first-level col-xs-12">                    
                     <div class="lang">
@@ -189,9 +190,12 @@
                             <div class="clearfix"></div>
                         </div>
                     </div>
-                </div><!-- /.dropdown menu -->
-                
-                <div id="searchBlock" class="hide">
+                </div><!-- /.dropdown menu -->                              
+            </div><!-- /.container -->
+            
+            <!-- search block -->
+            <div id="searchBlock" class="search-block">
+                <form>
                     <input class="type-btn" placeholder="Search ..." type="text" value="" />
                     <input class="search-btn btn" type="submit" value="search" />
                     <div class="autocomplete-box">
@@ -201,8 +205,8 @@
                             <li>black tie</li>
                         </ul>
                     </div>
-                </div><!-- /#searchBlock -->
-            </div><!-- /.container -->
+                </form>
+            </div><!-- /#searchBlock -->
         </header>
         
         <!-- Mid section | slider, box elements -->
