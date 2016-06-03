@@ -13,7 +13,7 @@
   var $email = $('#contactForm').find('.email');
   // check to see UA
   var isMob = ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) );
-
+  var resize;
   
   /**
    * Checks the see the device and resolution so that
@@ -48,7 +48,9 @@
     $('#cart').off().on('click', main_open_shopping_menu);
     $('#closeCart').off().on('click', main_close_shopping_menu);
     $('#quantity').off().on('click', main_show_picker);
-    $('#search').off().on('click', main_show_searchbar);    
+    $('#search').off().on('click', main_show_searchbar);   
+    $('#toggler').off().on('click', main_toggle_menu); 
+    $('#collapsibleMenu').find('.indicator').off().on('click', main_expand_lvl_two); 
     main_insert_into_qunatity();
     
   });
@@ -59,9 +61,8 @@
    */
   $(window).resize(function() {
     clearTimeout(resize);
-      resize = setTimeout(function() {
-        //magic goes here
-
+      resize = setTimeout(function() {        
+        main_box_resizing();
       }, 300);
   });
   
@@ -70,6 +71,11 @@
    * the searchbar is displayed.
    */
   function main_show_searchbar(e) {
+    
+    // if the dropdown menu is open, close it [looks ugly and unproffesional]
+    if ($ddm.hasClass('opened')) {
+      main_close_dropdown_menu();
+    }
     
     $('#searchBlock').removeClass('push-in').addClass('push-out');
     $('.mid-section').removeClass('not-push').addClass('has-push-mid');
@@ -110,6 +116,19 @@
   }
   
   /**
+   * Toggles the menu on the left when on mobile
+   */
+  function main_toggle_menu() {
+    
+    $('#collapsibleMenu').addClass('push-out');
+    $('.mid-section, #mainNavbar').removeClass('not-push').addClass('has-push-left');
+    $('body').addClass('push').addClass('left');
+    $('#cartShadow').fadeIn(150);
+    main_active_shadow();
+    
+  }
+  
+  /**
    * When the user clicks on the options list
    * the value is inserted into the select element
    * and the picker is closed
@@ -132,6 +151,11 @@
    * with the bag/cart information
    */
   function main_open_shopping_menu() {
+    
+    // if the dropdown menu is open, close it [looks ugly and unproffesional]
+    if ($ddm.hasClass('opened')) {
+      main_close_dropdown_menu();
+    }
     
     $('#shoppingCart').addClass('push-in');
     $('.mid-section, #mainNavbar').removeClass('not-push').addClass('has-push-top');
@@ -206,10 +230,39 @@
         $('#cartShadow').fadeOut(150);
         $('#searchBlock').removeClass('z5');
         $('body').removeClass('mid');
+      } else if ($('body').hasClass('left')) {
+        $('#collapsibleMenu').removeClass('push-out');
+        $('.mid-section, #mainNavbar').removeClass('has-push-left').addClass('not-push');
+        $('body').addClass('push').addClass('left');
+        $('#cartShadow').fadeOut(150);
+        $('body').removeClass('left');
       }
       
     });
     
+  }
+  
+  /**
+   * Expands the secondary lvl menues in the mobile dropdown menu
+   */
+  function main_expand_lvl_two(e) {
+    
+    // first close any other opened submenu
+    $('#collapsibleMenu .indicator').each(function(){
+      if ($(this).hasClass('opened')) {
+        $(this).removeClass('opened').addClass('closed');
+        $(this).find('ul').slideUp();
+      }
+    });
+
+    
+    var classname = e.target.firstElementChild.className;
+    classname = classname.replace(/ /g,".");
+    $('.'+classname).slideDown().parent().removeClass('closed').addClass('opened');
+
+    
+
+    //
   }
   
   /**
@@ -218,7 +271,7 @@
    */
   function main_close_dropdown_menu() {
     
-    $ddm.slideUp(150).toggleClass('closed');
+    $ddm.slideUp(150).toggleClass('opened');
     
   }
   

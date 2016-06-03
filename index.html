@@ -10,8 +10,7 @@
         <meta name="msapplication-TileImage" content="../assets/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="stylesheets/main.css">
-        <link rel="stylesheet" href="stylesheets/responsive.css">
+        <link rel="stylesheet" href="stylesheets/main.css">        
         
         <script src="js/jquery-1.11.2.min.js"></script>
     </head>
@@ -29,10 +28,10 @@
                                 <div class="product">
                                     <h5>Product</h5>
                                     <div class="clearfix"></div>
-                                    <div class="image col-xs-1">
+                                    <div class="image col-xs-1 col-md-1">
                                         <img class="img-resize" src="images/products/shirt.png" />
                                     </div>
-                                    <div class="details col-xs-3">
+                                    <div class="details col-xs-4 col-md-3">
                                         <span class="name">Black shirt</span>
                                         <span class="id">Product nr.: 382832</span>
                                         <a class="action" href="#">edit</a>
@@ -101,9 +100,11 @@
                                 <p>Order shipped withing <span>1 business day<br/>30-day return guarantee</span></p>
                             </div>
                             <div class="right">
-                                <span>We accept:</span>
-                                <span class="ccards">&nbsp;</span>
-                                <button class="w btn" name="Send" value="Send">SECURE CHECKOUT</button>
+                                <div>
+                                    <span>We accept:</span>
+                                    <span class="ccards">&nbsp;</span>
+                                    <button class="w btn" name="Send" value="Send">SECURE CHECKOUT</button>
+                                </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>                            
@@ -116,7 +117,14 @@
             
             <div id="mainNavbar" class="container-fluid not-push">                                               
                 <!-- Top level menu -->
-                <div class="main first-level col-xs-12">                    
+                <div class="main first-level col-xs-12">     
+                    <div class="toggler-wrapper visible-xs">
+                        <button id="toggler" class="mobile-menu-toggle collapsed" type="button">
+                            <span class="bar">&nbsp;</span>
+                            <span class="bar">&nbsp;</span>
+                            <span class="bar">&nbsp;</span>
+                        </button>
+                    </div>               
                     <div class="lang">
                         <a href="#">NL</a>
                     </div>
@@ -144,6 +152,7 @@
                         <li>men</li>
                         <li>experience</li>
                     </ul>
+                    <div class="pin visible-xs">stores</div>
                     <div id="search" class="search">
                         <span>search</span>                    
                     </div>
@@ -218,6 +227,46 @@
             </div><!-- /#searchBlock -->
         </header>
         
+        <div id="collapsibleMenu" class="visible-xs collapsible-menu push-in">
+            <div class="inner">
+                <ul class="nav-menu">
+                    <li class="home"><a href="/">home</a></li>
+                    <li class="indicator closed">women
+                        <ul class="sub-menu lvl-two women">
+                            <li><a href="#">all clothgin</a></li>
+                            <li><a href="#">accessories</a></li>
+                            <li><a href="#">basics</a></li>
+                            <li><a href="#">dresses</a></li>
+                            <li><a href="#">jackets</a></li>
+                            <li><a href="#">jeans</a></li>
+                            <li><a href="#">pants</a></li>
+                            <li><a href="#">shirts</a></li>
+                            <li><a href="#">skirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="indicator closed">men
+                        <ul class="sub-menu lvl-two men">
+                            <li><a href="#">all clothgin</a></li>
+                            <li><a href="#">accessories</a></li>
+                            <li><a href="#">basics</a></li>
+                            <li><a href="#">dresses</a></li>
+                            <li><a href="#">jackets</a></li>
+                            <li><a href="#">jeans</a></li>
+                            <li><a href="#">pants</a></li>
+                            <li><a href="#">shirts</a></li>
+                            <li><a href="#">skirts</a></li>
+                        </ul>
+                    </li>
+                    <li>experience</li>
+                </ul>
+                <ul class="sub-menu">
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">best sellers</a></li>
+                    <li><a href="#">sales</a></li>
+                </ul>                
+            </div>
+        </div>
+        
         <!-- Mid section -->
         <section class="mid-section not-push">
             <!-- Slider -->
@@ -287,7 +336,7 @@
             <!-- Products -->
             <div class="products">
                 <div class="inner">
-                    <div class="left oBox col-md-6">
+                    <div class="left oBox col-md-6 col-xs-12">
                         <div class="image iBox">
                             <img class="img-resize" src="images/products/img1-min.jpg" />
                         </div>
@@ -297,7 +346,7 @@
                             <a href="#">READ MORE</a>
                         </div>
                     </div>
-                    <div class="right oBox col-md-6">
+                    <div class="right oBox col-md-6 col-xs-12">
                         <div class="image iBox">
                             <img class="img-resize" src="images/products/img2-min.jpg" />
                         </div>

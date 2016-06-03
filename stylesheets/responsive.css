@@ -1,352 +1,313 @@
 /**
  *   For mediaqueries.
  */
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1376px) and (min-width: 992px) {
-  /* line 8, ../sass/responsive.scss */
-  #section05 .quote1 {
-    left: 5%;
-    top: 35%;
-  }
-  /* line 12, ../sass/responsive.scss */
-  #section05 .quote2 {
-    left: 25%;
-    top: 15%;
-  }
+/* LArge devices, Desktopsa nd Laptops [and even a few tablets] */
+/* Medium Devices, Tablets */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
   /* line 16, ../sass/responsive.scss */
-  #section05 .quote3 {
-    left: 47%;
-    top: 46%;
+  #shoppingCart .third.row .right {
+    text-align: right;
   }
   /* line 20, ../sass/responsive.scss */
-  #section05 .quote4 {
-    left: 56%;
-    top: 66%;
+  #shoppingCart .first .right .size
+  .first .right .color,
+  #shoppingCart .first .right .quantity {
+    margin-right: 31px;
   }
-}
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
-  /* line 28, ../sass/responsive.scss */
-  #section02 .info {
-    padding: 0 15px;
+  /* line 26, ../sass/responsive.scss */
+  #shoppingCart .ccards {
+    margin: 0;
   }
-}
-@media only screen and (max-width: 1200px) {
+
+  /* End shoppingCart */
   /* line 34, ../sass/responsive.scss */
-  #popupBox .boxwrapper {
-    left: 0 !important;
-    width: calc(100% - 36px);
+  #contact .info > div {
+    padding-right: 0;
   }
-
   /* line 39, ../sass/responsive.scss */
-  #floatingnavbar .info {
-    display: none;
+  #contact .newsletter .email {
+    width: 100%;
   }
-
-  /* line 44, ../sass/responsive.scss */
-  #section04 .iconwrapper {
-    display: none;
+  /* line 42, ../sass/responsive.scss */
+  #contact .newsletter .w {
+    margin: 0;
+    background-position: 69px, 16px;
   }
-  /* line 47, ../sass/responsive.scss */
-  #section04 .iconwrapper-mobile {
-    padding-top: 30px;
-    display: block;
+  /* line 46, ../sass/responsive.scss */
+  #contact .newsletter .m {
+    margin: 0;
+    background-position: 47px, 16px;
   }
   /* line 50, ../sass/responsive.scss */
-  #section04 .iconwrapper-mobile img {
-    width: 100%;
+  #contact .newsletter .b {
+    background-position: 54px, 16px;
   }
-  /* line 54, ../sass/responsive.scss */
-  #section04 .devider {
-    margin-top: 19em;
-  }
-}
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) and (min-width: 768px) {
-  /* line 62, ../sass/responsive.scss */
-  #intro {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  /* line 66, ../sass/responsive.scss */
-  #intro img {
-    margin: 0 auto;
+  /* line 53, ../sass/responsive.scss */
+  #contact .newsletter .btn {
+    padding: 0 20px 0 9px;
   }
 
-  /* line 70, ../sass/responsive.scss */
-  #section02 .featurepicwrapper {
-    margin-bottom: 30px;
-  }
-
-  /* line 73, ../sass/responsive.scss */
-  #section04 .picture img {
-    width: 100%;
-  }
-
-  /* line 77, ../sass/responsive.scss */
-  #section05 .quote1 {
-    left: 5%;
-    top: 35%;
-  }
-  /* line 81, ../sass/responsive.scss */
-  #section05 .quote2 {
-    left: 40%;
-    top: 15%;
-  }
-  /* line 85, ../sass/responsive.scss */
-  #section05 .quote3 {
-    left: 47%;
-    top: 52%;
-  }
-  /* line 89, ../sass/responsive.scss */
-  #section05 .quote4 {
-    left: 27%;
-    top: 74%;
+  /* End Contact */
+  /* line 61, ../sass/responsive.scss */
+  .products .left,
+  .products .right {
+    padding: 10px;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 97, ../sass/responsive.scss */
-  #navbar {
-    display: block;
-    margin: 0 auto;
-    width: 406px;
-  }
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /* line 107, ../sass/responsive.scss */
-  #fixednavbar .navbar-toggle {
-    display: block;
-  }
-
-  /* line 112, ../sass/responsive.scss */
-  #section02 .featurepicwrapper {
-    margin-bottom: 30px;
-  }
-  /* line 115, ../sass/responsive.scss */
-  #section02 .clickme {
-    left: calc(50% - 70px);
-  }
-
-  /* line 120, ../sass/responsive.scss */
-  #section03 .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    background: transparent;
-  }
-  /* line 127, ../sass/responsive.scss */
-  #section03 .responsive-wrapper {
-    background: transparent url("../images/patterns/redox_01.png") repeat scroll 0 0;
-    border-radius: 3px;
-    opacity: 0.9;
-    height: 100%;
-    padding: 60px 10px 0;
-    position: relative;
-    vertical-align: middle;
-  }
-  /* line 136, ../sass/responsive.scss */
-  #section03 .text {
-    padding: 10px;
-  }
-
-  /* line 140, ../sass/responsive.scss */
-  #section03 .bg::before {
+  /* line 70, ../sass/responsive.scss */
+  .visible-xs {
     display: none;
   }
-
-  /* line 144, ../sass/responsive.scss */
-  #section04 .picture {
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    justify-content: center;
-    text-align: center;
+}
+/* Small Devices, Tablets 10.1, Phones */
+@media only screen and (max-width: 768px) {
+  /* line 80, ../sass/responsive.scss */
+  #navigation .lang,
+  #navigation .login,
+  #navigation .nav-menu,
+  #navigation .wishlist {
+    display: none;
   }
-  /* line 150, ../sass/responsive.scss */
-  #section04 .picture img {
+  /* line 87, ../sass/responsive.scss */
+  #navigation .second-level {
+    display: block;
+  }
+  /* line 91, ../sass/responsive.scss */
+  #navigation .logo {
+    left: calc(50% - 100px);
+  }
+  /* line 93, ../sass/responsive.scss */
+  #navigation .logo a {
+    font-size: 22px;
+  }
+  /* line 98, ../sass/responsive.scss */
+  #navigation .cart {
+    margin-top: 5px;
+  }
+  /* line 102, ../sass/responsive.scss */
+  #navigation .search {
+    left: calc(50% + 17px);
+    right: 0;
+  }
+  /* line 107, ../sass/responsive.scss */
+  #navigation .first-level div:not(.logo) a {
+    padding-top: 1px;
+  }
+  /* line 111, ../sass/responsive.scss */
+  #navigation .toggler-wrapper {
+    left: 10px;
+    position: absolute;
+    width: 31px;
+    top: 20px;
+  }
+  /* line 116, ../sass/responsive.scss */
+  #navigation .toggler-wrapper button {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 18px;
+    outline: medium none;
+    width: 17px;
+    margin-top: 4px;
+    padding: 0;
+  }
+  /* line 125, ../sass/responsive.scss */
+  #navigation .toggler-wrapper button .bar {
+    background: #000;
+    color: #000;
+    border-radius: 1px;
+    display: block;
+    margin-bottom: 3px;
+    height: 2px;
+    width: 18px;
+  }
+
+  /* line 139, ../sass/responsive.scss */
+  #information {
     height: 100%;
   }
-  /* line 154, ../sass/responsive.scss */
-  #section04 .wrapper > div {
-    display: block;
-  }
-  /* line 157, ../sass/responsive.scss */
-  #section04 .iconwrapper-mobile {
-    display: block;
-    margin: 0 -15px;
-    position: relative;
-  }
-  /* line 162, ../sass/responsive.scss */
-  #section04 .devider {
-    height: 1px;
-    margin: 50px 0;
-  }
-
-  /* line 167, ../sass/responsive.scss */
-  #intro {
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  /* line 171, ../sass/responsive.scss */
-  #intro img {
+  /* line 142, ../sass/responsive.scss */
+  #information .socials {
+    display: table;
     margin: 0 auto;
+    padding: 0;
+    float: none;
+  }
+  /* line 149, ../sass/responsive.scss */
+  #information p {
+    bottom: 15px;
+    left: calc(50% - 40px);
+    position: absolute;
   }
 
-  /* line 175, ../sass/responsive.scss */
-  #navbar {
+  /* End information */
+  /* line 156, ../sass/responsive.scss */
+  footer {
+    padding-top: 20px;
+    height: 86px;
+  }
+  /* line 160, ../sass/responsive.scss */
+  footer footer .container-fluid {
+    height: 100%;
+    padding: 0 28px;
+  }
+
+  /* End Footer */
+  /* line 168, ../sass/responsive.scss */
+  #contact .sub-menu,
+  #contact .info {
+    display: none;
+  }
+  /* line 173, ../sass/responsive.scss */
+  #contact .newsletter {
     width: 100%;
+    padding: 0;
+  }
+  /* line 176, ../sass/responsive.scss */
+  #contact .newsletter .email {
+    width: 100%;
+  }
+  /* line 179, ../sass/responsive.scss */
+  #contact .newsletter .m {
+    margin: 0;
+    position: absolute;
+    left: calc(50% - 30px);
+  }
+  /* line 184, ../sass/responsive.scss */
+  #contact .newsletter .w {
     margin: 0;
   }
-  /* line 178, ../sass/responsive.scss */
-  #navbar li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 2px solid transparent;
-    transition: border linear 0.3s;
-  }
-  /* line 183, ../sass/responsive.scss */
-  #navbar li:hover {
-    border-bottom: 2px solid #ffaa4f;
-    text-shadow: 0px 1px 1px #000000;
-  }
-  /* line 189, ../sass/responsive.scss */
-  #navbar .arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid black;
+  /* line 187, ../sass/responsive.scss */
+  #contact .newsletter .b {
+    float: right;
   }
 
+  /* End contact */
+  /* line 194, ../sass/responsive.scss */
+  .products .left {
+    padding: 0;
+  }
   /* line 197, ../sass/responsive.scss */
-  .indicators {
-    right: 1px;
+  .products .oBox {
+    padding-bottom: 60px;
+  }
+  /* line 199, ../sass/responsive.scss */
+  .products .oBox .image {
+    padding: 0;
+  }
+  /* line 202, ../sass/responsive.scss */
+  .products .oBox .details {
+    padding: 20px 10px 0;
+  }
+  /* line 206, ../sass/responsive.scss */
+  .products .iBox {
+    float: none;
+    width: 100%;
   }
 
-  /* line 200, ../sass/responsive.scss */
-  .carousel-control.right {
-    right: 8px;
+  /* End products */
+  /* line 212, ../sass/responsive.scss */
+  .notice h4 {
+    font-size: 19px;
+    font-weight: 100;
   }
+
+  /* line 217, ../sass/responsive.scss */
+  #boxes .box-caption span {
+    font-size: 26px;
+    width: 80px;
+  }
+
+  /* line 222, ../sass/responsive.scss */
+  #slider .caption h3 {
+    font-size: 100px;
+    font-weight: 100;
+  }
+
+  /* line 229, ../sass/responsive.scss */
+  #shoppingCart .left,
+  #shoppingCart .right {
+    width: 100%;
+  }
+  /* line 234, ../sass/responsive.scss */
+  #shoppingCart .first .left,
+  #shoppingCart .second .left,
+  #shoppingCart .third .left {
+    padding-bottom: 15px;
+  }
+  /* line 240, ../sass/responsive.scss */
+  #shoppingCart .first .right .size,
+  #shoppingCart .first .right .color,
+  #shoppingCart .first .right .quantity {
+    margin-right: 1px;
+  }
+  /* line 246, ../sass/responsive.scss */
+  #shoppingCart .ccards {
+    margin: 0;
+  }
+  /* line 250, ../sass/responsive.scss */
+  #shoppingCart .first .right .wrapper > div {
+    float: left;
+    width: 24%;
+  }
+  /* line 255, ../sass/responsive.scss */
+  #shoppingCart .product .image {
+    padding-right: 0;
+    width: 50%;
+  }
+  /* line 260, ../sass/responsive.scss */
+  #shoppingCart .details {
+    margin-left: 0;
+    padding-left: 0;
+    width: 50%;
+  }
+  /* line 266, ../sass/responsive.scss */
+  #shoppingCart table tr td:last-child {
+    padding-right: 0;
+  }
+  /* line 270, ../sass/responsive.scss */
+  #shoppingCart .row p {
+    text-align: center;
+  }
+  /* line 274, ../sass/responsive.scss */
+  #shoppingCart .third .right > div {
+    display: block;
+    margin: 0 auto;
+    width: 192px;
+  }
+
+  /* End shoppingCart */
+  /* line 283, ../sass/responsive.scss */
+  #searchBlock .top-block .search-btn {
+    background-position: 8px -783px;
+    padding: 0;
+    right: 0;
+    text-indent: -9999px;
+    width: 17px;
+  }
+  /* line 290, ../sass/responsive.scss */
+  #searchBlock .top-block .clear-btn {
+    background-position: 11px -183px;
+    right: 17px;
+    text-indent: -9999px;
+    width: 30px;
+  }
+
+  /* End searchBlock */
 }
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) and (min-width: 480px) {
-  /* line 208, ../sass/responsive.scss */
-  #section03 .text {
-    height: calc(100% - 140px);
-    overflow: scroll;
-  }
-
-  /* line 214, ../sass/responsive.scss */
-  #section05 .quote1 {
-    top: 34%;
-  }
-  /* line 217, ../sass/responsive.scss */
-  #section05 .quote2 {
-    top: 15%;
-  }
-  /* line 220, ../sass/responsive.scss */
-  #section05 .quote3 {
-    top: 54%;
-  }
-  /* line 223, ../sass/responsive.scss */
-  #section05 .quote4 {
-    top: 74%;
-  }
-  /* line 226, ../sass/responsive.scss */
-  #section05 .quote {
-    left: calc(50% - 191px) !important;
-  }
-
-  /* line 230, ../sass/responsive.scss */
-  #section07 .form form {
-    width: 100%;
-  }
-  /* line 232, ../sass/responsive.scss */
-  #section07 .form form input {
-    display: inline-block;
-    float: left;
-    width: 49%;
-  }
-
-  /* line 238, ../sass/responsive.scss */
-  #section07 .body {
-    width: calc(100% - 90px);
-  }
-
-  /* line 241, ../sass/responsive.scss */
-  #section07 .name,
-  #section07 .subject {
-    margin-right: 4px;
-  }
-}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* line 250, ../sass/responsive.scss */
-  #main-carousel .slide {
-    width: 100%;
-  }
-  /* line 253, ../sass/responsive.scss */
-  #main-carousel .slide1, #main-carousel .slide3, #main-carousel .slide5 {
-    margin-bottom: 8px;
-  }
-  /* line 256, ../sass/responsive.scss */
-  #main-carousel .carousel-control span:first-child {
-    margin-top: -31px;
+  /* line 308, ../sass/responsive.scss */
+  #slider .caption h3 {
+    font-size: 80px;
+    font-weight: 100;
   }
 
-  /* line 261, ../sass/responsive.scss */
-  #section03 .wrapper {
-    padding: 45px 15px;
-  }
-  /* line 264, ../sass/responsive.scss */
-  #section03 .text {
-    overflow: scroll;
-    height: calc(100% - 140px);
-  }
-
-  /* line 270, ../sass/responsive.scss */
-  #section05 .quote1 {
-    top: 34%;
-  }
-  /* line 273, ../sass/responsive.scss */
-  #section05 .quote2 {
-    top: 15%;
-  }
-  /* line 276, ../sass/responsive.scss */
-  #section05 .quote3 {
-    top: 54%;
-  }
-  /* line 279, ../sass/responsive.scss */
-  #section05 .quote4 {
-    top: 74%;
-  }
-  /* line 282, ../sass/responsive.scss */
-  #section05 .quote {
-    left: 5px !important;
-    width: calc(100% - 6px);
-  }
-
-  /* line 288, ../sass/responsive.scss */
-  #section07 .btn {
-    bottom: 0;
-  }
-  /* line 291, ../sass/responsive.scss */
-  #section07 .body {
-    width: calc(100% - 90px);
-  }
-  /* line 294, ../sass/responsive.scss */
-  #section07 .form form {
-    display: block;
-    width: 100%;
-  }
-  /* line 297, ../sass/responsive.scss */
-  #section07 .form form input {
-    margin-left: 0;
-    margin-right: 0;
-    width: 99%;
+  /* line 312, ../sass/responsive.scss */
+  #slider .caption span {
+    font-size: 21px;
   }
 }
 /* Extra Small Devices, Phones */

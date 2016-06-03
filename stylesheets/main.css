@@ -1,9 +1,9 @@
 /* ===================================
    Improts
    =================================== */
-/* line 264, small_icons/*.png */
-.small_icons-sprite, .small_icons-arrow_down, #shoppingCart .select.closed, .small_icons-bread, .small_icons-cart, #navigation .cart, .small_icons-cartActive, #navigation .cart:hover, .small_icons-ccards, #shoppingCart .ccards, .small_icons-close, .close, .small_icons-close2, #shoppingCart .select.opened, #searchBlock .top-block .clear-btn, .small_icons-fb, #information .fb, .small_icons-fb2, #information .fb:hover, .small_icons-gp, #information .gp, .small_icons-gp2, #information .gp:hover, .small_icons-home, #navigation .nav-menu .home, .small_icons-in, #information .in, .small_icons-in2, #information .in:hover, .small_icons-nl_flag, #navigation .lang a, .small_icons-pin, #contact .info .pin, .small_icons-pt, #information .pt, .small_icons-pt2, #information .pt:hover, .small_icons-search, #navigation .search, .small_icons-searchActive, #navigation .search:hover, .small_icons-small_arrow_blue, #contact .info a, .small_icons-small_arrow_white, #shoppingCart .btn, #searchBlock .top-block .search-btn, #contact .newsletter .btn, .small_icons-tw, #information .tw, .small_icons-tw2, #information .tw:hover, .small_icons-wish, #navigation .wishlist, .small_icons-wishActive, #navigation .wishlist:hover, .small_icons-yt, #information .yt, .small_icons-yt2, #information .yt:hover {
-  background-image: url('/images/small_icons-s1715d5a2d1.png');
+/* line 272, small_icons/*.png */
+.small_icons-sprite, .small_icons-arrow_down, #shoppingCart .select.closed, .small_icons-bread, .small_icons-cart, #navigation .cart, .small_icons-cartActive, #navigation .cart:hover, .small_icons-ccards, #shoppingCart .ccards, .small_icons-close, .close, .small_icons-close2, #shoppingCart .select.opened, #searchBlock .top-block .clear-btn, .small_icons-fb, #information .fb, .small_icons-fb2, #information .fb:hover, .small_icons-gp, #information .gp, .small_icons-gp2, #information .gp:hover, .small_icons-home, #navigation .nav-menu .home, .small_icons-in, #information .in, .small_icons-in2, #information .in:hover, .small_icons-nl_flag, #navigation .lang a, .small_icons-pin, #contact .info .pin, .small_icons-pin2, #navigation .pin, .small_icons-pt, #information .pt, .small_icons-pt2, #information .pt:hover, .small_icons-search, #navigation .search, .small_icons-searchActive, #navigation .search:hover, .small_icons-small_arrow_blue, .products a, #contact .info a, .small_icons-small_arrow_white, #shoppingCart .btn, #searchBlock .top-block .search-btn, #contact .newsletter .btn, .small_icons-tw, #information .tw, .small_icons-tw2, #information .tw:hover, .small_icons-wish, #navigation .wishlist, .small_icons-wishActive, #navigation .wishlist:hover, .small_icons-yt, #information .yt, .small_icons-yt2, #information .yt:hover {
+  background-image: url('/images/small_icons-s9dc42e7ced.png');
   background-repeat: no-repeat;
 }
 
@@ -88,63 +88,68 @@
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-pt, #information .pt {
+.small_icons-pin2, #navigation .pin {
   background-position: 0 -577px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.small_icons-pt, #information .pt {
+  background-position: 0 -620px;
+}
+
+/* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-pt2, #information .pt:hover {
-  background-position: 0 -615px;
+  background-position: 0 -658px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-search, #navigation .search {
-  background-position: 0 -653px;
+  background-position: 0 -696px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-searchActive, #navigation .search:hover {
-  background-position: 0 -690px;
+  background-position: 0 -733px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.small_icons-small_arrow_blue, #contact .info a {
-  background-position: 0 -727px;
+.small_icons-small_arrow_blue, .products a, #contact .info a {
+  background-position: 0 -770px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-small_arrow_white, #shoppingCart .btn, #searchBlock .top-block .search-btn, #contact .newsletter .btn {
-  background-position: 0 -758px;
+  background-position: 0 -801px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-tw, #information .tw {
-  background-position: 0 -789px;
+  background-position: 0 -832px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-tw2, #information .tw:hover {
-  background-position: 0 -824px;
+  background-position: 0 -867px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-wish, #navigation .wishlist {
-  background-position: 0 -859px;
+  background-position: 0 -902px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-wishActive, #navigation .wishlist:hover {
-  background-position: 0 -894px;
+  background-position: 0 -937px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-yt, #information .yt {
-  background-position: 0 -929px;
+  background-position: 0 -972px;
 }
 
 /* line 84, ../../../../../home/alexandar/.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .small_icons-yt2, #information .yt:hover {
-  background-position: 0 -967px;
+  background-position: 0 -1010px;
 }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -972,6 +977,17 @@ h3, h4, h5, h6 {
   width: 100px;
 }
 /* line 154, ../sass/main.scss */
+#navigation .pin {
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+  font-family: "sofia_prolight";
+  height: 23px;
+  padding-left: 29px;
+  margin-top: 16px;
+  width: 16px;
+}
+/* line 166, ../sass/main.scss */
 #navigation .search {
   cursor: pointer;
   font-size: 14px;
@@ -981,16 +997,16 @@ h3, h4, h5, h6 {
   right: 12px;
   top: 17px;
 }
-/* line 163, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 #navigation .search:hover {
   color: #000;
 }
 
-/* line 170, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 #midSection {
   width: 100%;
 }
-/* line 172, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 #midSection img {
   width: 100%;
 }
@@ -998,29 +1014,29 @@ h3, h4, h5, h6 {
 /* ===================================
    Dropdown menu
    =================================== */
-/* line 181, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .dropdown-menu {
   display: none;
   position: absolute;
   z-index: 20;
 }
-/* line 186, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .dropdown-menu .inner {
   background: #fcfbf9 none repeat scroll 0 0;
   border: 1px solid #dddad6;
   padding: 25px 10px 20px;
 }
-/* line 192, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .dropdown-menu .container-fluid {
   padding: 0 10px;
 }
-/* line 196, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .dropdown-menu .two {
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
 }
-/* line 202, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 .dropdown-menu h4 {
   color: #002d47;
   font-family: "sofia_promedium";
@@ -1028,11 +1044,11 @@ h3, h4, h5, h6 {
   font-weight: 100;
   margin-bottom: 22px;
 }
-/* line 210, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .dropdown-menu li {
   padding-bottom: 13px;
 }
-/* line 214, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .dropdown-menu .tri {
   border-top: 1px solid #dddad6;
   border-left: 1px solid #dddad6;
@@ -1048,7 +1064,7 @@ h3, h4, h5, h6 {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-/* line 230, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .dropdown-menu a {
   color: #002d47;
   display: flex;
@@ -1060,7 +1076,7 @@ h3, h4, h5, h6 {
 /* ===================================
    Shopping cart
    =================================== */
-/* line 244, ../sass/main.scss */
+/* line 256, ../sass/main.scss */
 #shoppingCart {
   border-bottom: 1px solid #dddad6;
   background: #fcfbf9 none repeat scroll 0 0;
@@ -1070,40 +1086,40 @@ h3, h4, h5, h6 {
   width: 100%;
   z-index: 6;
 }
-/* line 254, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 #shoppingCart .inner {
   padding: 0 10px;
 }
-/* line 258, ../sass/main.scss */
+/* line 270, ../sass/main.scss */
 #shoppingCart .row {
   color: #002d47;
   display: block;
   padding: 20px 0;
   width: 100%;
 }
-/* line 263, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 #shoppingCart .row p {
   line-height: 1.5;
   font-size: 14px;
   font-family: "sofia_prolight";
 }
-/* line 268, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 #shoppingCart .row span {
   font-size: 14px;
   font-family: "sofia_promedium";
 }
-/* line 274, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 #shoppingCart .row.first,
 #shoppingCart .row.second {
   border-bottom: 1px solid #dddad6;
 }
-/* line 279, ../sass/main.scss */
+/* line 291, ../sass/main.scss */
 #shoppingCart .ccards {
   font-size: 14px;
   font-family: "sofia_prolight";
   margin: 0 20px 0 3px;
 }
-/* line 285, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
 #shoppingCart .action {
   color: #999999;
   font-size: 14px;
@@ -1111,111 +1127,111 @@ h3, h4, h5, h6 {
   border-bottom: 1px solid #999999;
   padding-bottom: 3px;
 }
-/* line 291, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 #shoppingCart .action:hover {
   color: #666666;
 }
-/* line 296, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 #shoppingCart table {
   width: 100%;
 }
-/* line 298, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 #shoppingCart table tr td:last-child {
   padding-right: 25px;
   text-align: right;
 }
-/* line 302, ../sass/main.scss */
+/* line 314, ../sass/main.scss */
 #shoppingCart table tr:first-child td {
   padding-bottom: 9px;
 }
-/* line 305, ../sass/main.scss */
+/* line 317, ../sass/main.scss */
 #shoppingCart table tr:nth-child(2) td {
   padding-bottom: 17px;
 }
-/* line 310, ../sass/main.scss */
+/* line 322, ../sass/main.scss */
 #shoppingCart .sym,
 #shoppingCart .name,
 #shoppingCart .ind {
   font-size: 15px !important;
   font-family: "sofia_promedium";
 }
-/* line 316, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 #shoppingCart .sum {
   font-size: 19px;
   font-family: "sofia_promedium";
 }
-/* line 321, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 #shoppingCart .left {
   float: left;
   width: 59%;
 }
-/* line 326, ../sass/main.scss */
+/* line 338, ../sass/main.scss */
 #shoppingCart .right {
   float: left;
   width: 41%;
 }
-/* line 331, ../sass/main.scss */
+/* line 343, ../sass/main.scss */
 #shoppingCart .btn {
   height: 50px;
   width: 190px;
-  background-position: 168px -739px;
+  background-position: 168px -782px;
 }
-/* line 337, ../sass/main.scss */
+/* line 349, ../sass/main.scss */
 #shoppingCart .btn:hover, #shoppingCart .btn:active {
   background-color: #001d2d;
 }
-/* line 343, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 #shoppingCart .ccards {
   display: inline-block;
   height: 22px;
   width: 115px;
 }
-/* line 350, ../sass/main.scss */
+/* line 362, ../sass/main.scss */
 #shoppingCart .product .id {
   font-size: 14px;
   font-family: "sofia_prolight";
 }
-/* line 354, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 #shoppingCart .product h5 {
   font-size: 15px;
   font-family: "sofia_promedium";
   margin-bottom: 23px;
 }
-/* line 360, ../sass/main.scss */
+/* line 372, ../sass/main.scss */
 #shoppingCart .product .image {
   padding-right: 0;
 }
-/* line 362, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 #shoppingCart .product .image img {
   width: auto !important;
 }
-/* line 367, ../sass/main.scss */
+/* line 379, ../sass/main.scss */
 #shoppingCart .details {
   padding-left: 0;
   margin-left: 35px;
 }
-/* line 370, ../sass/main.scss */
+/* line 382, ../sass/main.scss */
 #shoppingCart .details span {
   display: block;
   margin-bottom: 5px;
 }
-/* line 374, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 #shoppingCart .details a {
   display: inline-block;
 }
-/* line 377, ../sass/main.scss */
+/* line 389, ../sass/main.scss */
 #shoppingCart .details .id {
   margin-bottom: 8px;
 }
-/* line 380, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 #shoppingCart .details a:last-child {
   margin-left: 22px;
 }
-/* line 385, ../sass/main.scss */
+/* line 397, ../sass/main.scss */
 #shoppingCart .close {
   margin: 0;
 }
-/* line 389, ../sass/main.scss */
+/* line 401, ../sass/main.scss */
 #shoppingCart .tri {
   border-bottom: 1px solid #dddad6;
   border-right: 1px solid #dddad6;
@@ -1230,33 +1246,33 @@ h3, h4, h5, h6 {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-/* line 404, ../sass/main.scss */
+/* line 416, ../sass/main.scss */
 #shoppingCart .first .right {
   color: #002d47;
 }
-/* line 406, ../sass/main.scss */
+/* line 418, ../sass/main.scss */
 #shoppingCart .first .right .wrapper > div {
   float: left;
 }
-/* line 409, ../sass/main.scss */
+/* line 421, ../sass/main.scss */
 #shoppingCart .first .right .quantity {
   margin-right: 63px;
 }
-/* line 412, ../sass/main.scss */
+/* line 424, ../sass/main.scss */
 #shoppingCart .first .right .color,
 #shoppingCart .first .right .quantity {
   margin-right: 63px;
 }
-/* line 416, ../sass/main.scss */
+/* line 428, ../sass/main.scss */
 #shoppingCart .first .right .size {
   margin-right: 72px;
 }
-/* line 421, ../sass/main.scss */
+/* line 433, ../sass/main.scss */
 #shoppingCart .quantity {
   display: inline-block;
   position: relative;
 }
-/* line 426, ../sass/main.scss */
+/* line 438, ../sass/main.scss */
 #shoppingCart .select {
   cursor: pointer;
   box-shadow: unset;
@@ -1269,38 +1285,38 @@ h3, h4, h5, h6 {
   padding-left: 15px;
   width: 65px;
 }
-/* line 438, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 #shoppingCart .select.closed {
   background-position: 40px 18px;
 }
-/* line 442, ../sass/main.scss */
+/* line 454, ../sass/main.scss */
 #shoppingCart .select.opened {
   background-position: 40px -185px;
 }
-/* line 447, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 #shoppingCart .picker {
   background-color: #fff;
   border: 1px solid #dddad6;
   display: none;
   margin-top: -1px;
 }
-/* line 452, ../sass/main.scss */
+/* line 464, ../sass/main.scss */
 #shoppingCart .picker li {
   color: #002d47;
   font-size: 14px;
   font-family: "sofia_prolight";
   padding: 12px 0 12px 17px;
 }
-/* line 457, ../sass/main.scss */
+/* line 469, ../sass/main.scss */
 #shoppingCart .picker li:hover {
   background-color: #eeebe7;
   cursor: pointer;
 }
-/* line 462, ../sass/main.scss */
+/* line 474, ../sass/main.scss */
 #shoppingCart .picker li:active {
   font-family: "sofia_promedium";
 }
-/* line 467, ../sass/main.scss */
+/* line 479, ../sass/main.scss */
 #shoppingCart .outter-c {
   border: 1px solid #dddad6;
   border-radius: 20px;
@@ -1309,18 +1325,18 @@ h3, h4, h5, h6 {
   height: 40px;
   width: 40px;
 }
-/* line 475, ../sass/main.scss */
+/* line 487, ../sass/main.scss */
 #shoppingCart .inner-c {
   background: #000;
   border-radius: 10px;
   content: " ";
 }
-/* line 481, ../sass/main.scss */
+/* line 493, ../sass/main.scss */
 #shoppingCart .sym {
   display: flex;
   padding-top: 10px;
 }
-/* line 486, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 #shoppingCart .lbl {
   display: flex;
   font-size: 15px;
@@ -1331,25 +1347,25 @@ h3, h4, h5, h6 {
 /* ===================================
    Search block
    =================================== */
-/* line 499, ../sass/main.scss */
+/* line 511, ../sass/main.scss */
 #searchBlock {
   background-color: #fcfbf9;
   position: absolute;
   width: 100%;
   z-index: 2;
 }
-/* line 505, ../sass/main.scss */
+/* line 517, ../sass/main.scss */
 #searchBlock .top-block {
   border-top: 1px solid #dddad6;
   border-bottom: 1px solid #dddad6;
   height: 50px;
 }
-/* line 509, ../sass/main.scss */
+/* line 521, ../sass/main.scss */
 #searchBlock .top-block .btn {
   position: absolute;
   top: 0;
 }
-/* line 513, ../sass/main.scss */
+/* line 525, ../sass/main.scss */
 #searchBlock .top-block .clear-btn {
   background-color: transparent;
   border: medium none;
@@ -1357,26 +1373,30 @@ h3, h4, h5, h6 {
   right: 161px;
   text-indent: -9999px;
   width: 72px;
+  outline: none;
+  -webkit-outline: none;
   background-position: 36px -183px;
 }
-/* line 523, ../sass/main.scss */
+/* line 537, ../sass/main.scss */
 #searchBlock .top-block .search-btn {
   height: 48px;
   right: 49px;
   width: 112px;
-  background-position: 91px -740px;
+  outline: none;
+  -webkit-outline: none;
+  background-position: 91px -783px;
 }
-/* line 530, ../sass/main.scss */
+/* line 546, ../sass/main.scss */
 #searchBlock .top-block .search-btn:hover, #searchBlock .top-block .search-btn:active {
   background-color: #001d2d;
 }
-/* line 537, ../sass/main.scss */
+/* line 553, ../sass/main.scss */
 #searchBlock .bottom-block {
   border-top: none;
   border-bottom: 1px solid #dddad6;
   padding: 22px 0 7px;
 }
-/* line 543, ../sass/main.scss */
+/* line 559, ../sass/main.scss */
 #searchBlock .suggestions-list > li {
   cursor: pointer;
   color: #58799d;
@@ -1385,11 +1405,11 @@ h3, h4, h5, h6 {
   padding-bottom: 15px;
   text-align: center;
 }
-/* line 551, ../sass/main.scss */
+/* line 567, ../sass/main.scss */
 #searchBlock .suggestions-list > li:first-child {
   color: #001d2d;
 }
-/* line 555, ../sass/main.scss */
+/* line 571, ../sass/main.scss */
 #searchBlock .tri {
   border-top: 1px solid #dddad6;
   border-left: 1px solid #dddad6;
@@ -1404,7 +1424,7 @@ h3, h4, h5, h6 {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-/* line 570, ../sass/main.scss */
+/* line 586, ../sass/main.scss */
 #searchBlock .type-btn {
   background-color: #fcfbf9;
   border: none;
@@ -1416,32 +1436,85 @@ h3, h4, h5, h6 {
 }
 
 /* ===================================
+   Collapsible menu
+   =================================== */
+/* line 602, ../sass/main.scss */
+#collapsibleMenu {
+  background-color: #fcfbf9;
+  width: 233px;
+  position: absolute;
+  top: 0;
+  z-index: 6;
+}
+/* line 609, ../sass/main.scss */
+#collapsibleMenu ul {
+  border-right: 1px solid #dddad6;
+}
+/* line 617, ../sass/main.scss */
+#collapsibleMenu .sub-menu.lvl-two {
+  border-top: 1px solid #dddad6;
+  margin: 15px -1px -16px -10px;
+}
+/* line 622, ../sass/main.scss */
+#collapsibleMenu .indicator.opened {
+  cursor: pointer;
+  background: url("../images/small_icons/close2.png");
+  background-position: 212px 20px;
+  background-repeat: no-repeat;
+}
+/* line 627, ../sass/main.scss */
+#collapsibleMenu .indicator.opened ul {
+  display: block;
+}
+/* line 632, ../sass/main.scss */
+#collapsibleMenu .indicator.closed {
+  cursor: pointer;
+  background: url("../images/small_icons/arrow_down.png");
+  background-position: 212px 20px;
+  background-repeat: no-repeat;
+}
+/* line 637, ../sass/main.scss */
+#collapsibleMenu .indicator.closed ul {
+  display: none;
+}
+/* line 642, ../sass/main.scss */
+#collapsibleMenu li {
+  color: #002d47;
+  font-size: 15px;
+  font-family: "sofia_prolight";
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dddad6;
+}
+
+/* ===================================
    Slider
    =================================== */
-/* line 586, ../sass/main.scss */
+/* line 658, ../sass/main.scss */
 #slider {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-/* line 591, ../sass/main.scss */
+/* line 663, ../sass/main.scss */
 #slider .slides {
   width: 100%;
   position: relative;
   display: block;
 }
-/* line 597, ../sass/main.scss */
+/* line 669, ../sass/main.scss */
 #slider .slide {
   position: relative;
   top: 0;
   width: 100%;
   z-index: 1;
 }
-/* line 604, ../sass/main.scss */
+/* line 676, ../sass/main.scss */
 #slider .slide:not(.active) {
   position: absolute;
 }
-/* line 608, ../sass/main.scss */
+/* line 680, ../sass/main.scss */
 #slider .left {
   background-image: url("../images/arrow_left.png");
   margin-left: -6px;
@@ -1458,7 +1531,7 @@ h3, h4, h5, h6 {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 615, ../sass/main.scss */
+/* line 687, ../sass/main.scss */
 #slider .right {
   float: right;
   background-image: url("../images/arrow_right.png");
@@ -1475,49 +1548,49 @@ h3, h4, h5, h6 {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 622, ../sass/main.scss */
+/* line 694, ../sass/main.scss */
 #slider .active {
   z-index: 2;
 }
-/* line 626, ../sass/main.scss */
+/* line 698, ../sass/main.scss */
 #slider .inner {
   text-align: center;
 }
-/* line 630, ../sass/main.scss */
+/* line 702, ../sass/main.scss */
 #slider .caption {
   color: #fff;
 }
-/* line 634, ../sass/main.scss */
+/* line 706, ../sass/main.scss */
 #slider .caption h3 {
   font-size: 110px;
   font-family: "sofia_probold";
   margin: 0;
   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.35);
 }
-/* line 640, ../sass/main.scss */
+/* line 712, ../sass/main.scss */
 #slider .caption span {
   font-size: 25px;
   font-family: "sofia_prolight";
   text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.35);
 }
-/* line 647, ../sass/main.scss */
+/* line 719, ../sass/main.scss */
 #slider .controlls {
   position: absolute;
   top: calc(50% - 25px);
   width: 100%;
 }
-/* line 651, ../sass/main.scss */
+/* line 723, ../sass/main.scss */
 #slider .controlls span:hover {
   background-color: #001d2d;
 }
-/* line 656, ../sass/main.scss */
+/* line 728, ../sass/main.scss */
 #slider .navs {
   bottom: 0;
   position: absolute;
   left: calc(50% - 25px);
   z-index: 3;
 }
-/* line 661, ../sass/main.scss */
+/* line 733, ../sass/main.scss */
 #slider .navs li {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.5);
@@ -1528,11 +1601,11 @@ h3, h4, h5, h6 {
   text-indent: -9999px;
   width: 8px;
 }
-/* line 672, ../sass/main.scss */
+/* line 744, ../sass/main.scss */
 #slider .navs .active {
   background: white;
 }
-/* line 679, ../sass/main.scss */
+/* line 751, ../sass/main.scss */
 #slider:hover .controlls span {
   opacity: 1;
 }
@@ -1540,13 +1613,13 @@ h3, h4, h5, h6 {
 /* ===================================
    Boxes
    =================================== */
-/* line 689, ../sass/main.scss */
+/* line 761, ../sass/main.scss */
 #boxes {
   display: block;
   position: relative;
   width: 100%;
 }
-/* line 694, ../sass/main.scss */
+/* line 766, ../sass/main.scss */
 #boxes .left,
 #boxes .right {
   background-color: #002d47;
@@ -1555,7 +1628,7 @@ h3, h4, h5, h6 {
   position: relative;
   width: 50%;
 }
-/* line 703, ../sass/main.scss */
+/* line 775, ../sass/main.scss */
 #boxes img {
   opacity: 0.9;
   -webkit-transition-property: opacity;
@@ -1571,11 +1644,11 @@ h3, h4, h5, h6 {
   -o-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 706, ../sass/main.scss */
+/* line 778, ../sass/main.scss */
 #boxes img:hover {
   opacity: 0.85;
 }
-/* line 714, ../sass/main.scss */
+/* line 786, ../sass/main.scss */
 #boxes .box-caption span {
   color: #fff;
   font-size: 50px;
@@ -1587,7 +1660,7 @@ h3, h4, h5, h6 {
 /* ===================================
    Notice
    =================================== */
-/* line 729, ../sass/main.scss */
+/* line 801, ../sass/main.scss */
 .notice {
   border-top: 1px solid #dddad6;
   border-bottom: 1px solid #dddad6;
@@ -1596,7 +1669,7 @@ h3, h4, h5, h6 {
   text-align: center;
   width: 100%;
 }
-/* line 737, ../sass/main.scss */
+/* line 809, ../sass/main.scss */
 .notice h4 {
   color: #002d47;
   font-size: 25px;
@@ -1607,83 +1680,84 @@ h3, h4, h5, h6 {
 /* ===================================
    Products
    =================================== */
-/* line 749, ../sass/main.scss */
+/* line 821, ../sass/main.scss */
 .products {
   border-bottom: 1px solid #dddad6;
   position: relative;
   width: 100%;
 }
-/* line 754, ../sass/main.scss */
+/* line 826, ../sass/main.scss */
 .products .left {
   padding-left: 0;
 }
-/* line 758, ../sass/main.scss */
+/* line 830, ../sass/main.scss */
 .products .right {
   padding-right: 0;
 }
-/* line 762, ../sass/main.scss */
+/* line 834, ../sass/main.scss */
 .products .iBox {
   width: 50%;
   float: left;
 }
-/* line 765, ../sass/main.scss */
+/* line 837, ../sass/main.scss */
 .products .iBox .image {
   padding-right: 10px;
 }
-/* line 771, ../sass/main.scss */
+/* line 843, ../sass/main.scss */
 .products .oBox .image {
   padding-right: 10px;
 }
-/* line 774, ../sass/main.scss */
+/* line 846, ../sass/main.scss */
 .products .oBox .details {
   padding-left: 10px;
   padding-top: 38px;
   color: #002d47;
 }
-/* line 781, ../sass/main.scss */
+/* line 853, ../sass/main.scss */
 .products h3 {
   font-size: 19px;
   font-family: "sofia_promedium";
   margin: 0;
 }
-/* line 787, ../sass/main.scss */
+/* line 859, ../sass/main.scss */
 .products p {
   font-size: 14op;
   font-family: "sofia_prolight";
   line-height: 1.5;
   margin-top: 18px;
 }
-/* line 794, ../sass/main.scss */
+/* line 866, ../sass/main.scss */
 .products a {
+  display: block;
   font-size: 14px;
   font-family: "sofia_probold";
   color: #002d47;
   margin-top: 20px;
-  display: block;
+  background-position: 89px -767px;
 }
 
 /* ===================================
    Contactr block
    =================================== */
-/* line 807, ../sass/main.scss */
+/* line 881, ../sass/main.scss */
 #contact {
   background-color: #fcfbf9;
   padding: 30px 0 42px 0;
 }
-/* line 811, ../sass/main.scss */
+/* line 885, ../sass/main.scss */
 #contact .container-fluid {
   padding: 0 14px;
 }
-/* line 815, ../sass/main.scss */
+/* line 889, ../sass/main.scss */
 #contact .sub-menu {
   display: inline-block;
   float: left;
 }
-/* line 818, ../sass/main.scss */
+/* line 892, ../sass/main.scss */
 #contact .sub-menu li {
   padding-bottom: 15px;
 }
-/* line 821, ../sass/main.scss */
+/* line 895, ../sass/main.scss */
 #contact .sub-menu a {
   color: #002d47;
   display: block;
@@ -1691,12 +1765,12 @@ h3, h4, h5, h6 {
   font-family: "sofia_promedium";
   letter-spacing: 1px;
 }
-/* line 827, ../sass/main.scss */
+/* line 901, ../sass/main.scss */
 #contact .sub-menu a:hover {
   color: #000;
   font-family: "sofia_probold";
 }
-/* line 836, ../sass/main.scss */
+/* line 910, ../sass/main.scss */
 #contact .newsletter span {
   display: flex;
   font-size: 14px;
@@ -1705,7 +1779,7 @@ h3, h4, h5, h6 {
   margin: 0;
   margin-top: -6px;
 }
-/* line 844, ../sass/main.scss */
+/* line 918, ../sass/main.scss */
 #contact .newsletter .email {
   box-shadow: unset;
   border: 1px solid #dddad6;
@@ -1716,41 +1790,43 @@ h3, h4, h5, h6 {
   margin: 11px 0 15px 0;
   padding-left: 10px;
   width: 288px;
+  outline: none;
+  -webkit-outline: none;
 }
-/* line 855, ../sass/main.scss */
+/* line 931, ../sass/main.scss */
 #contact .newsletter .invalid {
   border: 1px solid #e6535d;
 }
-/* line 861, ../sass/main.scss */
+/* line 937, ../sass/main.scss */
 #contact .newsletter .btn:hover, #contact .newsletter .btn:active {
   background-color: #001d2d;
 }
-/* line 866, ../sass/main.scss */
+/* line 942, ../sass/main.scss */
 #contact .newsletter .w {
   margin-right: 12px;
-  background-position: 79px -742px;
+  background-position: 79px -785px;
 }
-/* line 870, ../sass/main.scss */
+/* line 946, ../sass/main.scss */
 #contact .newsletter .m {
   margin-right: 12px;
-  background-position: 58px -742px;
+  background-position: 58px -785px;
 }
-/* line 874, ../sass/main.scss */
+/* line 950, ../sass/main.scss */
 #contact .newsletter .b {
-  background-position: 66px -742px;
+  background-position: 66px -785px;
 }
-/* line 879, ../sass/main.scss */
-#contact .info.col-xs-4 > div {
+/* line 955, ../sass/main.scss */
+#contact .info > div {
   display: inline-block;
   padding-right: 13px;
 }
-/* line 884, ../sass/main.scss */
+/* line 960, ../sass/main.scss */
 #contact .info {
   float: right;
   text-align: center;
   font-size: 14px;
 }
-/* line 888, ../sass/main.scss */
+/* line 964, ../sass/main.scss */
 #contact .info .pin {
   margin: 0 auto;
   margin-bottom: 11px;
@@ -1758,7 +1834,7 @@ h3, h4, h5, h6 {
   height: 35px;
   width: 26px;
 }
-/* line 896, ../sass/main.scss */
+/* line 972, ../sass/main.scss */
 #contact .info p {
   color: #002d47;
   display: block;
@@ -1766,90 +1842,90 @@ h3, h4, h5, h6 {
   font-family: "sofia_prolight";
   margin: 4px;
 }
-/* line 903, ../sass/main.scss */
+/* line 979, ../sass/main.scss */
 #contact .info a {
   color: #002d47;
   display: block;
   font-family: "sofia_probold";
   margin-top: 20px;
   padding-right: 20px;
-  background-position: 153px -724px;
+  background-position: 153px -767px;
 }
 
 /* ===================================
    Footer block
    =================================== */
-/* line 919, ../sass/main.scss */
+/* line 995, ../sass/main.scss */
 footer {
   background-color: #002d47;
   height: 50px;
   padding-top: 15px;
 }
-/* line 924, ../sass/main.scss */
+/* line 1000, ../sass/main.scss */
 footer .container-fluid {
   padding: 0 28px;
 }
 
-/* line 932, ../sass/main.scss */
+/* line 1008, ../sass/main.scss */
 #information p {
   color: #fff;
   display: inline-block;
   font-size: 12px;
   font-family: "sofia_prolight";
 }
-/* line 939, ../sass/main.scss */
+/* line 1015, ../sass/main.scss */
 #information .socials {
   float: right;
   padding-right: 13px;
 }
-/* line 942, ../sass/main.scss */
+/* line 1018, ../sass/main.scss */
 #information .socials li {
   display: inline-block;
   margin: 0 10px;
 }
-/* line 946, ../sass/main.scss */
+/* line 1022, ../sass/main.scss */
 #information .socials a {
   display: block;
   width: 20px;
   height: 20px;
 }
-/* line 953, ../sass/main.scss */
+/* line 1029, ../sass/main.scss */
 #information .fb {
   background-position: 6px -231px;
 }
-/* line 956, ../sass/main.scss */
+/* line 1032, ../sass/main.scss */
 #information .fb:hover {
   background-position: 6px -269px;
 }
-/* line 967, ../sass/main.scss */
+/* line 1043, ../sass/main.scss */
 #information .in {
   background-position: 0 -416px;
 }
-/* line 970, ../sass/main.scss */
+/* line 1046, ../sass/main.scss */
 #information .in:hover {
   background-position: 0 -453px;
 }
-/* line 975, ../sass/main.scss */
+/* line 1051, ../sass/main.scss */
 #information .gp {
   background-position: 0 -305px;
 }
-/* line 978, ../sass/main.scss */
+/* line 1054, ../sass/main.scss */
 #information .gp:hover {
   background-position: 0 -342px;
 }
-/* line 989, ../sass/main.scss */
+/* line 1065, ../sass/main.scss */
 #information .tw {
-  background-position: 0 -787px;
+  background-position: 0 -830px;
 }
-/* line 992, ../sass/main.scss */
+/* line 1068, ../sass/main.scss */
 #information .tw:hover {
-  background-position: 0 -822px;
+  background-position: 0 -865px;
 }
 
 /* ===================================
    Misc
    =================================== */
-/* line 1003, ../sass/main.scss */
+/* line 1079, ../sass/main.scss */
 #cartShadow {
   position: absolute;
   left: 0;
@@ -1861,7 +1937,7 @@ footer .container-fluid {
   display: none;
 }
 
-/* line 1014, ../sass/main.scss */
+/* line 1090, ../sass/main.scss */
 .close {
   cursor: pointer;
   display: block;
@@ -1879,7 +1955,7 @@ footer .container-fluid {
   transition-property: transform;
 }
 
-/* line 1028, ../sass/main.scss */
+/* line 1104, ../sass/main.scss */
 .z5 {
   z-index: 5 !important;
 }
@@ -1887,53 +1963,411 @@ footer .container-fluid {
 /* ===================================
    Push animations
    =================================== */
-/* line 1036, ../sass/main.scss */
+/* line 1112, ../sass/main.scss */
 #searchBlock.push-in {
   transform: translateY(-169px);
   transition: transform 0.5s ease 0s;
 }
 
-/* line 1041, ../sass/main.scss */
+/* line 1117, ../sass/main.scss */
 #searchBlock.push-out {
   transform: translateY(0);
   transition: transform 0.5s ease 0s;
 }
 
-/* line 1046, ../sass/main.scss */
+/* line 1122, ../sass/main.scss */
 #mainNavbar {
   transform: translateY(0);
 }
 
-/* line 1050, ../sass/main.scss */
+/* line 1126, ../sass/main.scss */
 #mainNavbar.has-push-top,
 .mid-section.has-push-top {
   transform: translateY(385px);
   transition: transform 0.5s ease 0s;
 }
 
-/* line 1056, ../sass/main.scss */
+/* line 1132, ../sass/main.scss */
+#mainNavbar.has-push-left,
+.mid-section.has-push-left {
+  transform: translateX(233px);
+  transition: transform 0.5s ease 0s;
+}
+
+/* line 1138, ../sass/main.scss */
 .mid-section.has-push-mid {
   transform: translateY(170px);
   transition: transform 0.5s ease 0s;
 }
 
-/* line 1062, ../sass/main.scss */
+/* line 1144, ../sass/main.scss */
 #mainNavbar.not-push,
 .mid-section.not-push {
   transform: translateY(0);
   transition: transform 0.5s ease 0s;
 }
 
-/* line 1068, ../sass/main.scss */
-.shopping-cart.push-out {
-  transform: translateY(-385px);
+/*** For ease of access ***/
+@media only screen and (min-width: 1024px) {
+  /* line 1151, ../sass/main.scss */
+  .shopping-cart.push-out {
+    transform: translateY(-385px);
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  /* line 1151, ../sass/main.scss */
+  .shopping-cart.push-out {
+    transform: translateY(-455px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 1151, ../sass/main.scss */
+  .shopping-cart.push-out {
+    transform: translateY(-607px);
+  }
 }
 
-/* line 1072, ../sass/main.scss */
+@media only screen and (max-width: 768px) {
+  /* line 1162, ../sass/main.scss */
+  .collapsible-menu.push-in {
+    transform: translateX(-233px);
+    transition: transform 0.5s ease 0s;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 1168, ../sass/main.scss */
+  .collapsible-menu.push-out {
+    transform: translateX(0);
+    transition: transform 0.5s ease 0s;
+  }
+}
+
+/* line 1176, ../sass/main.scss */
 .shopping-cart.push-in {
   transform: translateY(0px);
 }
 
+/* ===================================
+   Additional imports
+   =================================== */
+/**
+ *   For mediaqueries.
+ */
+/* LArge devices, Desktopsa nd Laptops [and even a few tablets] */
+/* Medium Devices, Tablets */
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  /* line 16, ../sass/responsive.scss */
+  #shoppingCart .third.row .right {
+    text-align: right;
+  }
+  /* line 20, ../sass/responsive.scss */
+  #shoppingCart .first .right .size
+  .first .right .color,
+  #shoppingCart .first .right .quantity {
+    margin-right: 31px;
+  }
+  /* line 26, ../sass/responsive.scss */
+  #shoppingCart .ccards {
+    margin: 0;
+  }
+
+  /* End shoppingCart */
+  /* line 34, ../sass/responsive.scss */
+  #contact .info > div {
+    padding-right: 0;
+  }
+  /* line 39, ../sass/responsive.scss */
+  #contact .newsletter .email {
+    width: 100%;
+  }
+  /* line 42, ../sass/responsive.scss */
+  #contact .newsletter .w {
+    margin: 0;
+    background-position: 69px, 16px;
+  }
+  /* line 46, ../sass/responsive.scss */
+  #contact .newsletter .m {
+    margin: 0;
+    background-position: 47px, 16px;
+  }
+  /* line 50, ../sass/responsive.scss */
+  #contact .newsletter .b {
+    background-position: 54px, 16px;
+  }
+  /* line 53, ../sass/responsive.scss */
+  #contact .newsletter .btn {
+    padding: 0 20px 0 9px;
+  }
+
+  /* End Contact */
+  /* line 61, ../sass/responsive.scss */
+  .products .left,
+  .products .right {
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 70, ../sass/responsive.scss */
+  .visible-xs {
+    display: none;
+  }
+}
+/* Small Devices, Tablets 10.1, Phones */
+@media only screen and (max-width: 768px) {
+  /* line 80, ../sass/responsive.scss */
+  #navigation .lang,
+  #navigation .login,
+  #navigation .nav-menu,
+  #navigation .wishlist {
+    display: none;
+  }
+  /* line 87, ../sass/responsive.scss */
+  #navigation .second-level {
+    display: block;
+  }
+  /* line 91, ../sass/responsive.scss */
+  #navigation .logo {
+    left: calc(50% - 100px);
+  }
+  /* line 93, ../sass/responsive.scss */
+  #navigation .logo a {
+    font-size: 22px;
+  }
+  /* line 98, ../sass/responsive.scss */
+  #navigation .cart {
+    margin-top: 5px;
+  }
+  /* line 102, ../sass/responsive.scss */
+  #navigation .search {
+    left: calc(50% + 17px);
+    right: 0;
+  }
+  /* line 107, ../sass/responsive.scss */
+  #navigation .first-level div:not(.logo) a {
+    padding-top: 1px;
+  }
+  /* line 111, ../sass/responsive.scss */
+  #navigation .toggler-wrapper {
+    left: 10px;
+    position: absolute;
+    width: 31px;
+    top: 20px;
+  }
+  /* line 116, ../sass/responsive.scss */
+  #navigation .toggler-wrapper button {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    height: 18px;
+    outline: medium none;
+    width: 17px;
+    margin-top: 4px;
+    padding: 0;
+  }
+  /* line 125, ../sass/responsive.scss */
+  #navigation .toggler-wrapper button .bar {
+    background: #000;
+    color: #000;
+    border-radius: 1px;
+    display: block;
+    margin-bottom: 3px;
+    height: 2px;
+    width: 18px;
+  }
+
+  /* line 139, ../sass/responsive.scss */
+  #information {
+    height: 100%;
+  }
+  /* line 142, ../sass/responsive.scss */
+  #information .socials {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+  }
+  /* line 149, ../sass/responsive.scss */
+  #information p {
+    bottom: 15px;
+    left: calc(50% - 40px);
+    position: absolute;
+  }
+
+  /* End information */
+  /* line 156, ../sass/responsive.scss */
+  footer {
+    padding-top: 20px;
+    height: 86px;
+  }
+  /* line 160, ../sass/responsive.scss */
+  footer footer .container-fluid {
+    height: 100%;
+    padding: 0 28px;
+  }
+
+  /* End Footer */
+  /* line 168, ../sass/responsive.scss */
+  #contact .sub-menu,
+  #contact .info {
+    display: none;
+  }
+  /* line 173, ../sass/responsive.scss */
+  #contact .newsletter {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 176, ../sass/responsive.scss */
+  #contact .newsletter .email {
+    width: 100%;
+  }
+  /* line 179, ../sass/responsive.scss */
+  #contact .newsletter .m {
+    margin: 0;
+    position: absolute;
+    left: calc(50% - 30px);
+  }
+  /* line 184, ../sass/responsive.scss */
+  #contact .newsletter .w {
+    margin: 0;
+  }
+  /* line 187, ../sass/responsive.scss */
+  #contact .newsletter .b {
+    float: right;
+  }
+
+  /* End contact */
+  /* line 194, ../sass/responsive.scss */
+  .products .left {
+    padding: 0;
+  }
+  /* line 197, ../sass/responsive.scss */
+  .products .oBox {
+    padding-bottom: 60px;
+  }
+  /* line 199, ../sass/responsive.scss */
+  .products .oBox .image {
+    padding: 0;
+  }
+  /* line 202, ../sass/responsive.scss */
+  .products .oBox .details {
+    padding: 20px 10px 0;
+  }
+  /* line 206, ../sass/responsive.scss */
+  .products .iBox {
+    float: none;
+    width: 100%;
+  }
+
+  /* End products */
+  /* line 212, ../sass/responsive.scss */
+  .notice h4 {
+    font-size: 19px;
+    font-weight: 100;
+  }
+
+  /* line 217, ../sass/responsive.scss */
+  #boxes .box-caption span {
+    font-size: 26px;
+    width: 80px;
+  }
+
+  /* line 222, ../sass/responsive.scss */
+  #slider .caption h3 {
+    font-size: 100px;
+    font-weight: 100;
+  }
+
+  /* line 229, ../sass/responsive.scss */
+  #shoppingCart .left,
+  #shoppingCart .right {
+    width: 100%;
+  }
+  /* line 234, ../sass/responsive.scss */
+  #shoppingCart .first .left,
+  #shoppingCart .second .left,
+  #shoppingCart .third .left {
+    padding-bottom: 15px;
+  }
+  /* line 240, ../sass/responsive.scss */
+  #shoppingCart .first .right .size,
+  #shoppingCart .first .right .color,
+  #shoppingCart .first .right .quantity {
+    margin-right: 1px;
+  }
+  /* line 246, ../sass/responsive.scss */
+  #shoppingCart .ccards {
+    margin: 0;
+  }
+  /* line 250, ../sass/responsive.scss */
+  #shoppingCart .first .right .wrapper > div {
+    float: left;
+    width: 24%;
+  }
+  /* line 255, ../sass/responsive.scss */
+  #shoppingCart .product .image {
+    padding-right: 0;
+    width: 50%;
+  }
+  /* line 260, ../sass/responsive.scss */
+  #shoppingCart .details {
+    margin-left: 0;
+    padding-left: 0;
+    width: 50%;
+  }
+  /* line 266, ../sass/responsive.scss */
+  #shoppingCart table tr td:last-child {
+    padding-right: 0;
+  }
+  /* line 270, ../sass/responsive.scss */
+  #shoppingCart .row p {
+    text-align: center;
+  }
+  /* line 274, ../sass/responsive.scss */
+  #shoppingCart .third .right > div {
+    display: block;
+    margin: 0 auto;
+    width: 192px;
+  }
+
+  /* End shoppingCart */
+  /* line 283, ../sass/responsive.scss */
+  #searchBlock .top-block .search-btn {
+    background-position: 8px -783px;
+    padding: 0;
+    right: 0;
+    text-indent: -9999px;
+    width: 17px;
+  }
+  /* line 290, ../sass/responsive.scss */
+  #searchBlock .top-block .clear-btn {
+    background-position: 11px -183px;
+    right: 17px;
+    text-indent: -9999px;
+    width: 30px;
+  }
+
+  /* End searchBlock */
+}
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* line 308, ../sass/responsive.scss */
+  #slider .caption h3 {
+    font-size: 80px;
+    font-weight: 100;
+  }
+
+  /* line 312, ../sass/responsive.scss */
+  #slider .caption span {
+    font-size: 21px;
+  }
+}
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
 /* ===================================
    End of file
    =================================== */

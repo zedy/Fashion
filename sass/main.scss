@@ -151,6 +151,18 @@
     }
   }
   
+  .pin {
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    font-family: $sofia-l;
+    height: 23px;
+    padding-left: 29px;
+    margin-top: 16px;
+    width: 16px;
+    @extend .small_icons-pin2;
+  }
+  
   .search {
     cursor: pointer;
     font-size: 14px;      
@@ -517,6 +529,8 @@
       right: 161px;
       text-indent: -9999px;
       width: 72px;
+      outline: none;
+      -webkit-outline: none;
       @extend .small_icons-close2; 
       @include sprite-background-position($small_icons-sprites, close2, 36, 18px);
     }
@@ -525,6 +539,8 @@
       height: 48px;
       right: 49px;
       width: 112px;
+      outline: none;
+      -webkit-outline: none;
       @extend .small_icons-small_arrow_white; 
       @include sprite-background-position($small_icons-sprites, small_arrow_white, 91px, 18px);
       &:hover,
@@ -577,6 +593,62 @@
     width: 362px;
   }
   
+}
+
+/* ===================================
+   Collapsible menu
+   =================================== */
+
+#collapsibleMenu {
+  background-color: $header-bg;
+  width: 233px;
+  position: absolute;
+  top: 0;  
+  z-index: 6;
+    
+    ul {
+      border-right: 1px solid $border-gray;
+    }
+    
+    .lvl-two {
+      //display: none;
+    }
+    
+    .sub-menu.lvl-two {
+      border-top: 1px solid $border-gray;
+      margin: 15px -1px -16px -10px;
+    }
+    
+    .indicator.opened {
+      cursor: pointer;
+      background: url('../images/small_icons/close2.png');
+      background-position:  212px 20px;
+      background-repeat: no-repeat;
+      ul {
+        display: block;
+      }
+    }
+    
+    .indicator.closed {      
+      cursor: pointer;
+      background: url('../images/small_icons/arrow_down.png');
+      background-position:  212px 20px;
+      background-repeat: no-repeat;
+      ul {
+        display: none;
+      }
+    }
+    
+    li {
+      color: $header-main;
+      font-size: 15px;
+      font-family: $sofia-l;
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $border-gray;
+    }
+    
 }
 
 /* ===================================
@@ -792,11 +864,13 @@
   }
   
   a {
+    display: block;
     font-size: 14px;
     font-family: $sofia-b;
     color: $header-main;
-    margin-top: 20px;
-    display: block;
+    margin-top: 20px;    
+    @extend .small_icons-small_arrow_blue;
+    @include sprite-background-position($small_icons-sprites, small_arrow_blue, 89px, 3px);
   }
 }
 
@@ -851,6 +925,8 @@
       margin: 11px 0 15px 0;
       padding-left: 10px;
       width: 288px;
+      outline: none;
+      -webkit-outline: none;
     }
     .invalid {
       border: 1px solid #e6535d;
@@ -876,7 +952,7 @@
     }
   }
   
-  .info.col-xs-4 > div {
+  .info > div {
     display: inline-block;
     padding-right: 13px;
   }
@@ -1053,6 +1129,12 @@ footer {
   transition: transform 0.5s ease 0s;
 }
 
+#mainNavbar.has-push-left,
+.mid-section.has-push-left {
+  transform: translateX(233px);
+  transition: transform 0.5s ease 0s;
+}
+
 .mid-section.has-push-mid {
   transform: translateY(170px);
   transition: transform 0.5s ease 0s;
@@ -1065,13 +1147,41 @@ footer {
   transition: transform 0.5s ease 0s;
 }
 
+/*** For ease of access ***/
 .shopping-cart.push-out {
-  transform: translateY(-385px);
+  @media only screen and (min-width : 1024px) {
+    transform: translateY(-385px);
+  }
+  @media only screen and (max-width : 1024px) and (min-width: 768px) {
+    transform: translateY(-455px);
+  }
+  @media only screen and (max-width : 768px) {
+    transform: translateY(-607px);
+  }  
 }
+.collapsible-menu.push-in {
+  @media only screen and (max-width : 768px) {
+    transform: translateX(-233px);
+    transition: transform 0.5s ease 0s;
+  }
+}
+.collapsible-menu.push-out {
+  @media only screen and (max-width : 768px) {
+    transform: translateX(0);
+    transition: transform 0.5s ease 0s;
+  }
+}
+
 
 .shopping-cart.push-in {
   transform: translateY(0px);
 }
+
+/* ===================================
+   Additional imports
+   =================================== */
+
+@import "responsive";
 
 /* ===================================
    End of file
